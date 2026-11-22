@@ -104,14 +104,40 @@ def summarize_with_gemini(raw_by_game: dict[str, list[dict]]) -> dict:
 
     client = genai.Client(api_key=api_key)
     today_str = datetime.now(TZ_TW).strftime("%Y-%m-%d")
+    game_keys = list(raw_by_game.keys())
+
     prompt = f"""
 今天日期是 {today_str}（UTC+8）。
 請根據以下各遊戲的 Reddit 內鬼版最新貼文，整理出繁體中文情報與可推估的日期欄位。
+請嚴格輸出合法 JSON（不要加 markdown 三引號），結構必須為：
+{{
+  "games": {{
+    "遊戲id": {{
+      "cur": "當前版本號或 null",
+      "next": "下個版本上線日 YYYY-MM-DD 或 null",
+      "live": "前瞻直播日期 YYYY-MM-DD 或 null",
+      "mid": "下半卡池日期 YYYY-MM-DD 或 null",
+      "ban": [["角色名", "new"]],
+      "leaks": [
+        {{
+          "title": "繁體中文簡短標題",
+          "summary": "繁體中文情報重點摘要（約 1-2 句）",
+          "confidence": "高",
+          "date": "YYYY-MM-DD 或空字串",
+          "url": "原始貼文網址"
+        }}
+      ]
+    }}
+  }}
+}}
+
 規則：
-1. 所有文字輸出必須為繁體中文。
-2. confidence 只能填「高」、「中」、「低」：測試服解包或明確排程偏「高」，一般傳聞或猜測偏「中」或「低」。
-3. 若貼文沒有明確提到確切的版本號或日期（YYYY-MM-DD），該日期欄位請填 null，切勿猜測編造。
-4. 每款遊戲最多整理 6 則最有價值的 leaks。
+1. 可用的遊戲 id 僅限：{game_keys}。
+2. 所有文字輸出必須為繁體中文。
+3. confidence 只能填「高」、「中」、「低」：測試服解包或明確排程偏「高」，一般傳聞或猜測偏「中」或「低」。
+4. ban 陣列中第二個元素只能是 "new" 或 "re"。
+5. 若貼文沒有明確提到確切的版本號或日期（YYYY-MM-DD），該欄位請填 null，切勿猜測編造。
+6. 每款遊戲最多整理 6 則最有價值的 leaks。
 
 原始資料：
 {json.dumps(raw_by_game, ensure_ascii=False, indent=2)}
@@ -121,23 +147,48 @@ def summarize_with_gemini(raw_by_game: dict[str, list[dict]]) -> dict:
         contents=prompt,
         config={
             "response_mime_type": "application/json",
-            "response_schema": AgentOutput,
         },
     )
-    parsed: AgentOutput = response.parsed
+
+    text = (response.text or "").strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.I)
+
+    parsed_dict = json.loads(text)
+    raw_games = parsed_dict.get("games", {}) if isinstance(parsed_dict, dict) else {}
+
     out = {}
-    for gid, patch in parsed.games.items():
-        item = {"leaks": [lk.model_dump() for lk in patch.leaks]}
-        if patch.cur:
-            item["cur"] = patch.cur
-        if clean_date(patch.next):
-            item["next"] = clean_date(patch.next)
-        if clean_date(patch.live):
-            item["live"] = clean_date(patch.live)
-        if clean_date(patch.mid):
-            item["mid"] = clean_date(patch.mid)
-        if patch.ban:
-            item["ban"] = [b[:2] for b in patch.ban if len(b) >= 2]
+    for gid in game_keys:
+        patch = raw_games.get(gid) or {}
+        clean_leaks = []
+        for lk in (patch.get("leaks") or [])[:6]:
+            if not isinstance(lk, dict):
+                continue
+            conf = lk.get("confidence") if lk.get("confidence") in ("高", "中", "低") else "中"
+            clean_leaks.append({
+                "title": str(lk.get("title") or "情報重點"),
+                "summary": str(lk.get("summary") or ""),
+                "confidence": conf,
+                "date": clean_date(lk.get("date")) or str(lk.get("date") or ""),
+                "url": str(lk.get("url") or ""),
+            })
+
+        item = {"leaks": clean_leaks}
+        if patch.get("cur"):
+            item["cur"] = str(patch["cur"])
+        if clean_date(patch.get("next")):
+            item["next"] = clean_date(patch.get("next"))
+        if clean_date(patch.get("live")):
+            item["live"] = clean_date(patch.get("live"))
+        if clean_date(patch.get("mid")):
+            item["mid"] = clean_date(patch.get("mid"))
+        if isinstance(patch.get("ban"), list) and patch["ban"]:
+            valid_ban = []
+            for b in patch["ban"]:
+                if isinstance(b, list) and len(b) >= 2 and b[1] in ("new", "re"):
+                    valid_ban.append([str(b[0]), b[1]])
+            if valid_ban:
+                item["ban"] = valid_ban
         out[gid] = item
     return out
 
