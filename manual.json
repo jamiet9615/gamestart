@@ -1,0 +1,170 @@
+{
+  "updated_at": "2026-11-23 05:24:00",
+  "games": {
+    "genshin": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "7.2",
+          "start": "",
+          "live": "",
+          "mid": "2026-11-24",
+          "chars": [
+            { "name": "茲白", "type": "re", "attr": "" },
+            { "name": "莉奈婭", "type": "re", "attr": "" },
+            { "name": "納塔集錄混池", "type": "re", "attr": "" }
+          ]
+        },
+        {
+          "label": "下個版本",
+          "ver": "7.3（推算）",
+          "start": "2026-12-16",
+          "live": "",
+          "mid": "",
+          "chars": [
+            { "name": "冰之女皇「安娜絲塔夏」（預測）", "type": "new", "attr": "" },
+            { "name": "達妮卡（預測）", "type": "new", "attr": "" }
+          ]
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ]
+    },
+    "endfield": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "1.7 穿越甚大蘑境與你相逢",
+          "start": "2026-11-25",
+          "live": "",
+          "mid": "",
+          "chars": [
+            { "name": "小刻（六星限定）", "type": "new", "attr": "" },
+            { "name": "米米諾（活動免費贈送・滿潛專武）", "type": "new", "attr": "" },
+            { "name": "潔爾佩塔（上半）", "type": "re", "attr": "" },
+            { "name": "洛西（下半）", "type": "re", "attr": "" }
+          ]
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ]
+    },
+    "zzz": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "3.4 長日終盡",
+          "start": "2026-12-02",
+          "live": "",
+          "mid": "",
+          "chars": [
+            { "name": "挽晝（S級虛狩）", "type": "new", "attr": "" },
+            { "name": "知更鳥（更新免費領）", "type": "new", "attr": "" },
+            { "name": "卡芙卡（聯動）", "type": "new", "attr": "" },
+            { "name": "愛麗絲", "type": "re", "attr": "" }
+          ]
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ]
+    },
+    "wuwa": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "4.0 永明的燼焰",
+          "start": "2026-12-22",
+          "live": "",
+          "mid": "",
+          "chars": [
+            { "name": "安娜", "type": "new", "attr": "" },
+            { "name": "露希爾", "type": "new", "attr": "" }
+          ]
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ]
+    },
+    "hsr": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "4.8（推算）",
+          "start": "2026-12-23",
+          "live": "",
+          "mid": "",
+          "chars": [
+            { "name": "耀嘉音（聯動・登入免費領）", "type": "new", "attr": "" },
+            { "name": "艾蓮（聯動）", "type": "new", "attr": "" }
+          ]
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ]
+    },
+    "nte": { "versions": [] },
+    "tot": { "versions": [] }
+  }
+}
