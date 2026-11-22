@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>七遊戲情報站</title>
 <style>
-:root{--bg:#FFF8E9;--pink:#FFE9ED;--blue:#D1EBFF;--text:#3D3A38;--muted:#7a746f;--line:rgba(61,58,56,.12);--card:rgba(255,255,255,.55);--shadow:rgba(61,58,56,.16);
+:root{--bg:#FFF8E9;--pink:#FFE9ED;--blue:#D1EBFF;--text:#3D3A38;--muted:#7a746f;--line:rgba(61,58,56,.14);--card:rgba(255,255,255,.62);--shadow:rgba(61,58,56,.16);
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#2b2826;--pink:#4a3a3f;--blue:#34454f;--text:#f2ebe0;--muted:#b3aaa0;--line:rgba(255,255,255,.14);--card:rgba(255,255,255,.06);--shadow:rgba(0,0,0,.4)}}
 :root[data-theme="dark"]{color-scheme:dark;--bg:#2b2826;--pink:#4a3a3f;--blue:#34454f;--text:#f2ebe0;--muted:#b3aaa0;--line:rgba(255,255,255,.14);--card:rgba(255,255,255,.06);--shadow:rgba(0,0,0,.4)}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
-main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+main{max-width:780px;margin:0 auto;padding:20px 16px 56px}
+.topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
 h1{font-size:26px;margin:4px 0 2px;letter-spacing:.04em}
 h2{font-size:17px;margin:28px 0 10px}
-.sub{color:var(--muted);margin:0 0 16px;font-size:13px}
+.sub{color:var(--muted);margin:0 0 14px;font-size:13px}
 .note{background:var(--pink);border-radius:12px;padding:8px 12px;font-size:12.5px;margin-bottom:16px}
 .cal{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px}
 .cal-h{text-align:center;font-weight:700;margin-bottom:8px}
@@ -25,12 +26,11 @@ h2{font-size:17px;margin:28px 0 10px}
 .day:hover{background:var(--blue);filter:brightness(.94)}
 .day.today{border-color:var(--text)}
 .day.sel{background:var(--blue);box-shadow:0 0 0 2px var(--text) inset}
-.day.out{opacity:.3}
 .day b{font-size:12px;font-weight:500}
 .bar{height:6px;border-radius:3px}
 .nav{display:flex;justify-content:center;gap:12px;margin-top:10px}
 .nav button{width:44px;height:36px;border:1px solid var(--line);background:var(--blue);color:var(--text);border-radius:12px;font-size:18px;cursor:pointer;transition:box-shadow .15s,filter .15s}
-.nav button:hover,.btn:hover,.gh:hover,.chip:hover{filter:brightness(.93);box-shadow:0 4px 10px var(--shadow)}
+.nav button:hover,.btn:hover,.gh:hover,.chip:hover,.mode-btn:hover,.mini-btn:hover{filter:brightness(.93);box-shadow:0 4px 10px var(--shadow)}
 .detail{margin-top:10px;min-height:24px;font-size:13.5px}
 .detail span{display:inline-flex;align-items:center;gap:6px;margin:2px 10px 2px 0}
 .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
@@ -43,18 +43,44 @@ h2{font-size:17px;margin:28px 0 10px}
 .game.open .arr{transform:rotate(180deg)}
 .body{display:none;padding:0 14px 14px}
 .game.open .body{display:block}
-.info{background:var(--pink);border-radius:12px;padding:10px 12px;font-size:14px}
-.info p{margin:3px 0}
-.tag{display:inline-block;font-size:12px;padding:0 8px;border-radius:8px;background:var(--bg);border:1px solid var(--line);margin:0 4px 2px 0}
+.ver-list{display:grid;gap:8px}
+.ver-box{background:var(--pink);border-radius:12px;padding:10px 12px;font-size:13.5px}
+.ver-box.subver{background:rgba(209,235,255,.45)}
+.ver-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-weight:700;margin-bottom:4px}
+.ver-badge{font-size:11.5px;padding:1px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.ver-box p{margin:2px 0}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:8px;background:var(--bg);border:1px solid var(--line);margin:2px 4px 2px 0}
+.tag.new{background:var(--pink);font-weight:700}
 .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:10px}
-.btn{display:block;padding:10px 12px;border-radius:12px;background:var(--blue);color:var(--text);text-decoration:none;font-size:14px;border:1px solid var(--line);transition:box-shadow .15s,filter .15s}
+.btn{display:block;padding:10px 12px;border-radius:12px;background:var(--blue);color:var(--text);text-decoration:none;font-size:14px;border:1px solid var(--line);transition:box-shadow .15s,filter .15s;cursor:pointer}
 .btn.leak{background:var(--pink)}
 .btn small{display:block;color:var(--muted);font-size:12px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+.mode-btn{padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--blue);color:var(--text);font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;transition:box-shadow .15s,filter .15s}
+.mode-btn.editing{background:var(--pink)}
+/* 編輯模式區塊 */
+.admin-bar{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-bottom:16px}
+.admin-bar-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+.admin-actions{display:flex;flex-wrap:wrap;gap:8px}
+.mini-btn{padding:6px 11px;border-radius:10px;border:1px solid var(--line);background:var(--blue);color:var(--text);font:inherit;font-size:12.5px;cursor:pointer;transition:box-shadow .15s,filter .15s}
+.mini-btn.pink{background:var(--pink)}
+.mini-btn.ghost{background:var(--bg)}
+.edit-ver{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.edit-ver h4{margin:0 0 8px;font-size:14px;display:flex;align-items:center;justify-content:space-between}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;margin-bottom:8px}
+.field{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted)}
+.field input{width:100%;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:13px}
+.char-list{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.char-row{display:grid;grid-template-columns:auto 1fr 90px auto;gap:6px;align-items:center}
+.type-toggle{padding:5px 9px;border-radius:8px;border:1px solid var(--line);background:var(--blue);color:var(--text);font:inherit;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.type-toggle.new{background:var(--pink)}
+.char-row input{padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:13px;min-width:0}
+.del-btn{padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font-size:12px}
+.hint-kbd{font-size:11.5px;color:var(--muted);margin-top:4px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--text);outline-offset:2px}
 .back{display:inline-block;margin-bottom:12px}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:16px}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.chip{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer;transition:box-shadow .15s,filter .15s}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
 .chip.active{background:var(--blue);font-weight:700}
 .leak-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px}
 .leak-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-bottom:6px}
@@ -68,80 +94,526 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--text);outline-offse
 <body>
 <main id="app"></main>
 <script>
-var G=[
-{id:"genshin",n:"原神",c:"#F2B35E",cur:"示範 6.2",s:"2026-11-05",next:"2026-12-17",live:"2026-12-04",mid:"2026-11-26",ban:[["新角色 A","new"],["復刻角色 B","re"]],sub:"r/Genshin_Impact_Leaks",kw:"Version, Banner, Livestream",L:[["官方網站","https://genshin.hoyoverse.com/zh-tw"],["官方社群：HoYoLAB","https://www.hoyolab.com/"],["解包數值：nanoka.cc","https://nanoka.cc/"]],leaks:[]},
-{id:"hsr",n:"崩壞：星穹鐵道",c:"#9C8CE0",cur:"示範 4.x",s:"2026-11-12",next:"2026-12-24",live:"2026-12-11",mid:"2026-12-03",ban:[["新角色 C","new"]],sub:"r/HonkaiStarRail_leaks",kw:"Version, Banner, Schedule",L:[["官方網站","https://hsr.hoyoverse.com/zh-tw/home"],["官方社群：HoYoLAB","https://www.hoyolab.com/"],["解包數值：nanoka.cc","https://nanoka.cc/"]],leaks:[]},
-{id:"zzz",n:"絕區零",c:"#F08A6B",cur:"示範 2.x",s:"2026-11-19",next:"2026-12-31",live:"2026-12-18",mid:"2026-12-10",ban:[["新角色 D","new"],["復刻角色 E","re"]],sub:"r/Zenlesszonezeroleaks_",kw:"Version, Banner, Livestream",L:[["官方網站","https://zenless.hoyoverse.com/m/zh-tw/main"],["官方社群：HoYoLAB","https://www.hoyolab.com/"],["解包數值：nanoka.cc","https://nanoka.cc/"]],leaks:[]},
-{id:"wuwa",n:"鳴潮",c:"#6EC3C0",cur:"示範 3.x",s:"2026-11-06",next:"2026-12-18",live:"2026-12-05",mid:"2026-11-27",ban:[["新角色 F","new"]],sub:"r/WutheringWavesLeaks",kw:"Version, Banner, Livestream",L:[["官方網站","https://wutheringwaves.kurogames.com/m/zh-tw/main"],["解包數值：nanoka.cc","https://nanoka.cc/"]],leaks:[]},
-{id:"endfield",n:"明日方舟：終末地",c:"#E8C94F",cur:"示範 1.x",s:"2026-11-20",next:"2026-12-30",live:"2026-12-17",mid:"2026-12-09",ban:[["新角色 G","new"]],sub:"r/ArknightsEndfieldLeak",kw:"（不限）",L:[["官方網站","https://endfield.gryphline.com/zh-tw#home"],["巴哈姆特哈啦板","https://forum.gamer.com.tw/"]],leaks:[]},
-{id:"nte",n:"異環",c:"#E58FB6",cur:"示範 1.x",s:"2026-11-26",next:"2027-01-07",live:"2026-12-24",mid:"2026-12-16",ban:[["新角色 H","new"]],sub:"r/NTELeaks",kw:"（不限）",L:[["官方網站","https://nte.iwplay.com.tw/index.html"],["巴哈姆特哈啦板","https://forum.gamer.com.tw/"]],leaks:[]},
-{id:"tot",n:"時空中的繪旅人",c:"#7FB5E8",cur:"示範 台服",s:"2026-11-14",next:"2026-12-12",live:"（以台服粉專為準）",mid:"2026-11-28",ban:[["新卡池 I","new"]],sub:"台服粉專預告貼文",kw:"活動、卡池、維護",L:[["台服官方粉專","https://www.facebook.com/share/19m8q7YYD9/?mibextid=wwXIfr"],["官方網站","https://www.foralltime.com.tw/m/"],["巴哈姆特哈啦板","https://forum.gamer.com.tw/"]],leaks:[]}
+var STORAGE_KEY = "gamestart_manual_v1";
+var DEFAULT_GAMES = [
+  {
+    id:"genshin", n:"原神", c:"#F2B35E",
+    versions:[
+      {label:"當前版本", ver:"示範 6.2", start:"2026-11-05", live:"", mid:"2026-11-26", chars:[{name:"新角色 A",type:"new",attr:""},{name:"復刻角色 B",type:"re",attr:""}]},
+      {label:"下個版本", ver:"6.3", start:"2026-12-17", live:"2026-12-04", mid:"", chars:[]},
+      {label:"下下個版本", ver:"6.4", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"r/Genshin_Impact_Leaks", kw:"Version, Banner, Livestream",
+    L:[["官方網站","https://genshin.hoyoverse.com/zh-tw"],["官方社群：HoYoLAB","https://www.hoyolab.com/"],["解包數值：nanoka.cc","https://nanoka.cc/"]],
+    leaks:[]
+  },
+  {
+    id:"hsr", n:"崩壞：星穹鐵道", c:"#9C8CE0",
+    versions:[
+      {label:"當前版本", ver:"示範 4.x", start:"2026-11-12", live:"", mid:"2026-12-03", chars:[{name:"新角色 C",type:"new",attr:""}]},
+      {label:"下個版本", ver:"", start:"2026-12-24", live:"2026-12-11", mid:"", chars:[]},
+      {label:"下下個版本", ver:"", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"r/HonkaiStarRail_leaks", kw:"Version, Banner, Schedule",
+    L:[["官方網站","https://hsr.hoyoverse.com/zh-tw/home"],["官方社群：HoYoLAB","https://www.hoyolab.com/"],["解包數值：nanoka.cc","https://nanoka.cc/"]],
+    leaks:[]
+  },
+  {
+    id:"zzz", n:"絕區零", c:"#F08A6B",
+    versions:[
+      {label:"當前版本", ver:"示範 2.x", start:"2026-11-19", live:"", mid:"2026-12-10", chars:[{name:"新角色 D",type:"new",attr:""},{name:"復刻角色 E",type:"re",attr:""}]},
+      {label:"下個版本", ver:"", start:"2026-12-31", live:"2026-12-18", mid:"", chars:[]},
+      {label:"下下個版本", ver:"", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"r/Zenlesszonezeroleaks_", kw:"Version, Banner, Livestream",
+    L:[["官方網站","https://zenless.hoyoverse.com/m/zh-tw/main"],["官方社群：HoYoLAB","https://www.hoyolab.com/"],["解包數值：nanoka.cc","https://nanoka.cc/"]],
+    leaks:[]
+  },
+  {
+    id:"wuwa", n:"鳴潮", c:"#6EC3C0",
+    versions:[
+      {label:"當前版本", ver:"示範 3.x", start:"2026-11-06", live:"", mid:"2026-11-27", chars:[{name:"新角色 F",type:"new",attr:""}]},
+      {label:"下個版本", ver:"", start:"2026-12-18", live:"2026-12-05", mid:"", chars:[]},
+      {label:"下下個版本", ver:"", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"r/WutheringWavesLeaks", kw:"Version, Banner, Livestream",
+    L:[["官方網站","https://wutheringwaves.kurogames.com/m/zh-tw/main"],["解包數值：nanoka.cc","https://nanoka.cc/"]],
+    leaks:[]
+  },
+  {
+    id:"endfield", n:"明日方舟：終末地", c:"#E8C94F",
+    versions:[
+      {label:"當前版本", ver:"示範 1.x", start:"2026-11-20", live:"", mid:"2026-12-09", chars:[{name:"新角色 G",type:"new",attr:""}]},
+      {label:"下個版本", ver:"", start:"2026-12-30", live:"2026-12-17", mid:"", chars:[]},
+      {label:"下下個版本", ver:"", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"r/ArknightsEndfieldLeak", kw:"（不限）",
+    L:[["官方網站","https://endfield.gryphline.com/zh-tw#home"],["巴哈姆特哈啦板","https://forum.gamer.com.tw/"]],
+    leaks:[]
+  },
+  {
+    id:"nte", n:"異環", c:"#E58FB6",
+    versions:[
+      {label:"當前版本", ver:"示範 1.x", start:"2026-11-26", live:"", mid:"2026-12-16", chars:[{name:"新角色 H",type:"new",attr:""}]},
+      {label:"下個版本", ver:"", start:"2027-01-07", live:"2026-12-24", mid:"", chars:[]},
+      {label:"下下個版本", ver:"", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"r/NTELeaks", kw:"（不限）",
+    L:[["官方網站","https://nte.iwplay.com.tw/index.html"],["巴哈姆特哈啦板","https://forum.gamer.com.tw/"]],
+    leaks:[]
+  },
+  {
+    id:"tot", n:"時空中的繪旅人", c:"#7FB5E8",
+    versions:[
+      {label:"當前版本", ver:"示範 台服", start:"2026-11-14", live:"", mid:"2026-11-28", chars:[{name:"新卡池 I",type:"new",attr:""}]},
+      {label:"下個版本", ver:"", start:"2026-12-12", live:"", mid:"", chars:[]},
+      {label:"下下個版本", ver:"", start:"", live:"", mid:"", chars:[]}
+    ],
+    sub:"台服粉專預告貼文", kw:"活動、卡池、維護",
+    L:[["台服官方粉專","https://www.facebook.com/share/19m8q7YYD9/?mibextid=wwXIfr"],["官方網站","https://www.foralltime.com.tw/m/"],["巴哈姆特哈啦板","https://forum.gamer.com.tw/"]],
+    leaks:[]
+  }
 ];
-var E={}, updatedAt="", isLiveData=false, leakFilter="all";
+
+var G = JSON.parse(JSON.stringify(DEFAULT_GAMES));
+var E = {}, editMode = false, openIds = {}, leakFilter = "all";
+var statusMsg = "可直接閱讀情報，或點右上角「切換編輯模式」手動調整三版本時間與角色。";
+
 function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function isDate(d){return /^\d{4}-\d{2}-\d{2}$/.test(String(d||"").trim())}
+
+function ensureThreeVersions(g){
+  var labels = ["當前版本", "下個版本", "下下個版本"];
+  if(!Array.isArray(g.versions)) g.versions = [];
+  for(var i=0;i<3;i++){
+    if(!g.versions[i]){
+      g.versions[i] = {label:labels[i], ver:"", start:"", live:"", mid:"", chars:[]};
+    } else {
+      g.versions[i].label = g.versions[i].label || labels[i];
+      if(!Array.isArray(g.versions[i].chars)) g.versions[i].chars = [];
+    }
+  }
+  g.versions = g.versions.slice(0,3);
+}
+
+function applyGamePatch(g, patch){
+  if(!patch) return;
+  ensureThreeVersions(g);
+  if(Array.isArray(patch.versions) && patch.versions.length){
+    for(var i=0;i<3;i++){
+      var pv = patch.versions[i];
+      if(!pv) continue;
+      ["ver","start","live","mid"].forEach(function(k){
+        if(pv[k] !== undefined && pv[k] !== null && pv[k] !== "") g.versions[i][k] = String(pv[k]);
+      });
+      if(Array.isArray(pv.chars) && pv.chars.length){
+        g.versions[i].chars = pv.chars.map(function(c){
+          return {name:String(c.name||""), type:c.type==="re"?"re":"new", attr:String(c.attr||"")};
+        });
+      }
+    }
+  } else {
+    // 相容舊格式 cur / s / next / live / mid / ban
+    if(patch.cur) g.versions[0].ver = patch.cur;
+    if(patch.s) g.versions[0].start = patch.s;
+    if(patch.mid) g.versions[0].mid = patch.mid;
+    if(patch.next) g.versions[1].start = patch.next;
+    if(patch.live) g.versions[1].live = patch.live;
+    if(Array.isArray(patch.ban) && patch.ban.length){
+      g.versions[0].chars = patch.ban.map(function(b){
+        return {name:String(b[0]||""), type:b[1]==="re"?"re":"new", attr:String(b[2]||"")};
+      });
+    }
+  }
+  if(Array.isArray(patch.leaks)) g.leaks = patch.leaks;
+}
+
 function rebuildEvents(){
-  E={};
-  function add(d,g,t){if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return;(E[d]=E[d]||[]).push({c:g.c,t:"["+g.n+"] "+t})}
+  E = {};
+  function add(d, g, t){
+    if(!isDate(d)) return;
+    (E[d] = E[d] || []).push({c:g.c, t:"["+g.n+"] "+t});
+  }
   G.forEach(function(g){
-    add(g.next,g,"新版本上線");
-    add(g.live,g,"前瞻直播");
-    add(g.mid,g,"下半卡池切換");
-    add(g.s,g,"當前版本上線");
+    ensureThreeVersions(g);
+    g.versions.forEach(function(v, idx){
+      var vName = v.ver ? (" "+v.ver) : "";
+      if(idx === 0){
+        add(v.start, g, "當前版本上線" + vName);
+        add(v.mid, g, "當期下半卡池");
+        add(v.live, g, "前瞻直播");
+      } else if(idx === 1){
+        add(v.start, g, "下版本上線" + vName);
+        add(v.live, g, "下版前瞻直播");
+        add(v.mid, g, "下版下半卡池");
+      } else {
+        add(v.start, g, "下下版上線" + vName);
+        add(v.live, g, "下下版前瞻直播");
+        add(v.mid, g, "下下版下半卡池");
+      }
+    });
   });
 }
-rebuildEvents();
-var now=new Date(),Y=now.getFullYear(),M=now.getMonth(),sel=null;
+
+var now = new Date(), Y = now.getFullYear(), M = now.getMonth(), sel = null;
 function p(n){return n<10?"0"+n:""+n}
 function key(y,m,d){return y+"-"+p(m+1)+"-"+p(d)}
-function days(d){if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return"—";return Math.ceil((new Date(d+"T00:00:00")-new Date(now.getFullYear(),now.getMonth(),now.getDate()))/864e5)}
+function days(d){
+  if(!isDate(d)) return "—";
+  return Math.ceil((new Date(d+"T00:00:00") - new Date(now.getFullYear(),now.getMonth(),now.getDate())) / 864e5);
+}
+
 function calHtml(){
-var f=new Date(Y,M,1).getDay(),n=new Date(Y,M+1,0).getDate(),h='<div class="cal"><div class="cal-h">'+Y+" 年 "+(M+1)+' 月</div><div class="grid">';
-"日一二三四五六".split("").forEach(function(w){h+='<div class="wd">'+w+"</div>"});
-for(var i=0;i<f;i++)h+="<div></div>";
-for(var d=1;d<=n;d++){var k=key(Y,M,d),ev=E[k]||[],t=k===key(now.getFullYear(),now.getMonth(),now.getDate());
-h+='<button class="day'+(t?" today":"")+(sel===k?" sel":"")+'" data-k="'+k+'" title="'+esc(ev.map(function(e){return e.t}).join("、"))+'"><b>'+d+"</b>"+ev.map(function(e){return'<i class="bar" style="background:'+e.c+'"></i>'}).join("")+"</button>"}
-h+='</div><div class="nav"><button data-m="-1" aria-label="上個月">&lt;</button><button data-m="1" aria-label="下個月">&gt;</button></div><div class="detail" id="detail">'+detail()+"</div></div>";return h}
-function detail(){if(!sel)return'<span style="color:var(--muted)">點選日期查看事件</span>';var ev=E[sel]||[];return ev.length?ev.map(function(e){return'<span><i class="dot" style="background:'+e.c+'"></i>'+esc(e.t)+"</span>"}).join(""):'<span style="color:var(--muted)">'+esc(sel)+" 沒有事件</span>"}
+  var f = new Date(Y,M,1).getDay(), n = new Date(Y,M+1,0).getDate();
+  var h = '<div class="cal"><div class="cal-h">'+Y+" 年 "+(M+1)+' 月</div><div class="grid">';
+  "日一二三四五六".split("").forEach(function(w){h+='<div class="wd">'+w+"</div>"});
+  for(var i=0;i<f;i++) h+="<div></div>";
+  for(var d=1;d<=n;d++){
+    var k = key(Y,M,d), ev = E[k]||[], t = k===key(now.getFullYear(),now.getMonth(),now.getDate());
+    h+='<button class="day'+(t?" today":"")+(sel===k?" sel":"")+'" data-k="'+k+'" title="'+esc(ev.map(function(e){return e.t}).join("、"))+'"><b>'+d+"</b>"+ev.map(function(e){return'<i class="bar" style="background:'+e.c+'"></i>'}).join("")+"</button>";
+  }
+  h+='</div><div class="nav"><button data-m="-1" aria-label="上個月">&lt;</button><button data-m="1" aria-label="下個月">&gt;</button></div><div class="detail" id="detail">'+detail()+"</div></div>";
+  return h;
+}
+
+function detail(){
+  if(!sel) return '<span style="color:var(--muted)">點選日期查看事件</span>';
+  var ev = E[sel]||[];
+  return ev.length ? ev.map(function(e){return'<span><i class="dot" style="background:'+e.c+'"></i>'+esc(e.t)+"</span>"}).join("") : '<span style="color:var(--muted)">'+esc(sel)+" 沒有事件</span>";
+}
+
+function renderCharsTags(chars){
+  if(!chars || !chars.length) return '<span style="color:var(--muted);font-size:13px">尚未填入角色</span>';
+  return chars.map(function(c){
+    var isNew = c.type === "new";
+    var attrTxt = c.attr ? ("・"+esc(c.attr)) : "";
+    return '<span class="tag'+(isNew?" new":"")+'">'+(isNew?"新":"復刻")+" "+esc(c.name)+attrTxt+"</span>";
+  }).join("");
+}
+
+function viewBodyHtml(g){
+  ensureThreeVersions(g);
+  var vHtml = g.versions.map(function(v, idx){
+    var hasAny = v.ver || v.start || v.live || v.mid || (v.chars && v.chars.length);
+    if(idx === 2 && !hasAny) return "";
+    var dates = [];
+    if(v.start) dates.push("上線：" + esc(v.start));
+    if(v.live) dates.push("前瞻：" + esc(v.live));
+    if(v.mid) dates.push("下半：" + esc(v.mid));
+    return '<div class="ver-box'+(idx>0?" subver":"")+'">' +
+      '<div class="ver-head"><span class="ver-badge">'+esc(v.label)+'</span><span>'+esc(v.ver||"版本號未定")+'</span></div>' +
+      '<p>'+(dates.length ? dates.join(" ｜ ") : "日期尚未填寫")+'</p>' +
+      '<p>卡池角色：'+renderCharsTags(v.chars)+'</p>' +
+    '</div>';
+  }).join("");
+
+  var l = (g.L||[]).map(function(x){
+    return '<a class="btn" href="'+esc(x[1])+'" target="_blank" rel="noopener">'+esc(x[0])+"</a>";
+  }).join("");
+  var leakCount = (g.leaks||[]).length;
+  return '<div class="ver-list">'+vHtml+'</div>' +
+    '<div class="links"><a class="btn leak" href="#leaks-'+g.id+'">內鬼資訊整合<small>'+(leakCount?leakCount+" 則 AI 整理爆料":"AI Agent 整理的爆料")+'</small></a>'+l+'</div>';
+}
+
+function editBodyHtml(g){
+  ensureThreeVersions(g);
+  var blocks = g.versions.map(function(v, vIdx){
+    var charRows = (v.chars||[]).map(function(c, cIdx){
+      var isNew = c.type === "new";
+      return '<div class="char-row" data-gid="'+g.id+'" data-vidx="'+vIdx+'" data-cidx="'+cIdx+'">' +
+        '<button type="button" class="type-toggle'+(isNew?" new":"")+'" data-act="toggle-type">'+(isNew?"新角色":"復刻角色")+'</button>' +
+        '<input type="text" class="char-name" placeholder="角色名稱（Enter 新增下一位）" value="'+esc(c.name)+'">' +
+        '<input type="text" class="char-attr" placeholder="屬性(選填)" value="'+esc(c.attr)+'">' +
+        '<button type="button" class="del-btn" data-act="del-char" title="刪除此角色">✕</button>' +
+      '</div>';
+    }).join("");
+
+    return '<div class="edit-ver" data-gid="'+g.id+'" data-vidx="'+vIdx+'">' +
+      '<h4><span>'+(vIdx+1)+'. '+esc(v.label)+'</span>' +
+      '<button type="button" class="mini-btn pink" data-act="add-char" data-gid="'+g.id+'" data-vidx="'+vIdx+'">＋ 新增角色</button></h4>' +
+      '<div class="form-grid">' +
+        '<label class="field">版本號<input type="text" data-field="ver" placeholder="例：6.3" value="'+esc(v.ver)+'"></label>' +
+        '<label class="field">版本上線日<input type="date" data-field="start" value="'+esc(v.start)+'"></label>' +
+        '<label class="field">前瞻直播日<input type="date" data-field="live" value="'+esc(v.live)+'"></label>' +
+        '<label class="field">下半卡池日<input type="date" data-field="mid" value="'+esc(v.mid)+'"></label>' +
+      '</div>' +
+      '<div class="char-list">'+charRows+'</div>' +
+      '<div class="hint-kbd">快捷鍵：在角色欄按 <b>Enter</b> 新增下一位、<b>Alt+N</b> 切「新角色」、<b>Alt+R</b> 切「復刻角色」</div>' +
+    '</div>';
+  }).join("");
+
+  return blocks +
+    '<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:6px">' +
+      '<button type="button" class="mini-btn" data-act="save-local">儲存並套用至日曆</button>' +
+    '</div>';
+}
+
 function gameHtml(g){
-var b=(g.ban||[]).map(function(x){return'<span class="tag">'+(x[1]==="new"?"新":"復刻")+" "+esc(x[0])+"</span>"}).join("");
-var l=(g.L||[]).map(function(x){return x[1]?'<a class="btn" href="'+esc(x[1])+'" target="_blank" rel="noopener">'+esc(x[0])+"</a>":'<span class="btn" style="opacity:.6">'+esc(x[0])+"</span>"}).join("");
-var leakCount=(g.leaks||[]).length;
-return'<section class="game" id="g-'+g.id+'"><button class="gh" aria-expanded="false"><i class="dot" style="background:'+g.c+'"></i><span class="n">'+esc(g.n)+'</span><span class="v">'+esc(g.cur)+" ・ 下版倒數 "+days(g.next)+' 天</span><span class="arr">▾</span></button><div class="body"><div class="info"><p>當前版本：'+esc(g.s)+" 起，下版預計 "+esc(g.next)+"</p><p>前瞻直播："+esc(g.live)+"</p><p>卡池 UP："+b+'</p></div><div class="links"><a class="btn leak" href="#leaks-'+g.id+'">內鬼資訊整合<small>'+(leakCount?leakCount+" 則 AI 整理爆料":"AI Agent 整理的爆料")+'</small></a>'+l+"</div></div></section>"}
-function home(){
-var statusNote=isLiveData
-  ? "已載入 AI Agent 最新資料（更新時間："+esc(updatedAt||"未知")+"）"
-  : "目前顯示示範資料；放入 <code>data.json</code> 後將自動更新日程與各遊戲內鬼情報。";
-return'<h1>七遊戲情報站</h1><p class="sub">版本日程、卡池、爆料與攻略連結，一頁看完</p><div class="note">'+statusNote+'</div>'+calHtml()+"<h2>遊戲小抽屜</h2>"+G.map(gameHtml).join("")}
-function leaks(id){
-var g=G.filter(function(x){return x.id===id})[0];if(!g)return home();
-var list=(g.leaks||[]).filter(function(item){return leakFilter==="all"||item.confidence===leakFilter});
-var cards=list.length ? list.map(function(item){
-  var conf=esc(item.confidence||"中");
-  var badgeCls=conf==="高"?"badge high":"badge";
-  return'<article class="leak-card"><div class="leak-meta"><span class="'+badgeCls+'">可信度：'+conf+'</span><span>'+esc(item.date||"")+'</span></div><h3 class="leak-title">'+esc(item.title||"情報重點")+'</h3><p class="leak-sum">'+esc(item.summary||"")+'</p>'+(item.url?'<a class="leak-link" href="'+esc(item.url)+'" target="_blank" rel="noopener">查看原始來源 ↗</a>':'')+"</article>";
-}).join("") : '<div class="empty"><p><b>目前沒有符合條件的爆料資料</b></p><p>資料來源：'+esc(g.sub)+"</p><p>篩選關鍵字："+esc(g.kw)+'</p><p>執行 AI Agent 腳本產出 <code>data.json</code> 後，這裡會自動顯示本遊戲專屬的爆料列表。</p></div>';
-return'<a class="btn back" href="#">‹ 回到首頁</a><h1>'+esc(g.n)+' 內鬼情報</h1><p class="sub">獨立分頁・來源：'+esc(g.sub)+'</p><div class="filters"><button class="chip'+(leakFilter==="all"?" active":"")+'" data-f="all">全部</button><button class="chip'+(leakFilter==="高"?" active":"")+'" data-f="高">高可信度</button><button class="chip'+(leakFilter==="中"?" active":"")+'" data-f="中">中可信度</button><button class="chip'+(leakFilter==="低"?" active":"")+'" data-f="低">低可信度</button></div>'+cards}
-function render(){var h=location.hash.replace("#","");document.getElementById("app").innerHTML=h.indexOf("leaks-")===0?leaks(h.slice(6)):home()}
-document.addEventListener("click",function(e){
-var f=e.target.closest("[data-f]");if(f){leakFilter=f.dataset.f;render();return}
-var t=e.target.closest("[data-m]");if(t){M+=+t.dataset.m;if(M<0){M=11;Y--}if(M>11){M=0;Y++}sel=null;render();return}
-t=e.target.closest(".day");if(t){sel=t.dataset.k;render();return}
-t=e.target.closest(".gh");if(t){var o=t.parentNode.classList.toggle("open");t.setAttribute("aria-expanded",o)}});
-window.addEventListener("hashchange",function(){leakFilter="all";render()});
-fetch("./data.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("no json");return r.json()}).then(function(d){
-  if(!d||!d.games)return;
-  updatedAt=d.updated_at||"";
+  ensureThreeVersions(g);
+  var curVer = g.versions[0].ver || "未設定";
+  var nextStart = g.versions[1].start || "";
+  var isOpen = !!openIds[g.id] || editMode;
+  return '<section class="game'+(isOpen?" open":"")+'" id="g-'+g.id+'">' +
+    '<button type="button" class="gh" data-gid="'+g.id+'" aria-expanded="'+isOpen+'">' +
+      '<i class="dot" style="background:'+g.c+'"></i>' +
+      '<span class="n">'+esc(g.n)+'</span>' +
+      '<span class="v">'+esc(curVer)+" ・ 下版倒數 "+days(nextStart)+' 天</span>' +
+      '<span class="arr">▾</span>' +
+    '</button>' +
+    '<div class="body">'+(editMode ? editBodyHtml(g) : viewBodyHtml(g))+'</div>' +
+  '</section>';
+}
+
+function buildManualExportObject(){
+  var gamesObj = {};
   G.forEach(function(g){
-    var patch=d.games[g.id];
-    if(!patch)return;
-    ["cur","s","next","live","mid"].forEach(function(k){if(patch[k])g[k]=patch[k]});
-    if(Array.isArray(patch.ban)&&patch.ban.length)g.ban=patch.ban;
-    if(Array.isArray(patch.leaks))g.leaks=patch.leaks;
+    ensureThreeVersions(g);
+    gamesObj[g.id] = {
+      versions: g.versions.map(function(v){
+        return {
+          label: v.label,
+          ver: v.ver || "",
+          start: v.start || "",
+          live: v.live || "",
+          mid: v.mid || "",
+          chars: (v.chars||[]).filter(function(c){return String(c.name||"").trim()!==""}).map(function(c){
+            return {name:String(c.name).trim(), type:c.type==="re"?"re":"new", attr:String(c.attr||"").trim()};
+          })
+        };
+      })
+    };
   });
-  isLiveData=true;
+  var d = new Date();
+  var ts = d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())+" "+p(d.getHours())+":"+p(d.getMinutes())+":00";
+  return {updated_at: ts, games: gamesObj};
+}
+
+function saveToLocalStorage(){
+  var obj = buildManualExportObject();
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); } catch(e){}
+  rebuildEvents();
+}
+
+function home(){
+  var adminPanel = editMode ? (
+    '<div class="admin-bar">' +
+      '<div class="admin-bar-top">' +
+        '<div><b>編輯模式已開啟</b><div style="font-size:12.5px;color:var(--muted)">修改會即時存入此瀏覽器；若要同步到 GitHub Pages 給所有人看，請匯出並更新 <code>manual.json</code>。</div></div>' +
+        '<div class="admin-actions">' +
+          '<button type="button" class="mini-btn" data-act="save-local">儲存套用</button>' +
+          '<button type="button" class="mini-btn pink" data-act="copy-json">複製 manual.json</button>' +
+          '<button type="button" class="mini-btn" data-act="download-json">下載 manual.json</button>' +
+          '<button type="button" class="mini-btn ghost" data-act="reset-local">清除本機暫存</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>'
+  ) : "";
+
+  return '<div class="topbar">' +
+      '<div><h1>七遊戲情報站</h1><p class="sub">版本日程、卡池、爆料與攻略連結，一頁看完</p></div>' +
+      '<button type="button" class="mode-btn'+(editMode?" editing":"")+'" data-act="toggle-edit">'+(editMode?"✓ 完成並返回檢視":"✎ 切換編輯模式")+'</button>' +
+    '</div>' +
+    '<div class="note">'+esc(statusMsg)+'</div>' +
+    adminPanel +
+    calHtml() +
+    '<h2>遊戲小抽屜'+(editMode?"（編輯中）":"")+'</h2>' +
+    G.map(gameHtml).join("");
+}
+
+function leaks(id){
+  var g = G.filter(function(x){return x.id===id})[0];
+  if(!g) return home();
+  var list = (g.leaks||[]).filter(function(item){return leakFilter==="all"||item.confidence===leakFilter});
+  var cards = list.length ? list.map(function(item){
+    var conf = esc(item.confidence||"中");
+    var badgeCls = conf==="高"?"badge high":"badge";
+    return '<article class="leak-card"><div class="leak-meta"><span class="'+badgeCls+'">可信度：'+conf+'</span><span>'+esc(item.date||"")+'</span></div><h3 class="leak-title">'+esc(item.title||"情報重點")+'</h3><p class="leak-sum">'+esc(item.summary||"")+'</p>'+(item.url?'<a class="leak-link" href="'+esc(item.url)+'" target="_blank" rel="noopener">查看原始來源 ↗</a>':'')+"</article>";
+  }).join("") : '<div class="empty"><p><b>目前沒有符合條件的爆料資料</b></p><p>資料來源：'+esc(g.sub)+'</p><p>篩選關鍵字：'+esc(g.kw)+'</p></div>';
+  return '<a class="btn back" href="#">‹ 回到首頁</a><h1>'+esc(g.n)+' 內鬼情報</h1><p class="sub">獨立分頁・來源：'+esc(g.sub)+'</p><div class="filters"><button class="chip'+(leakFilter==="all"?" active":"")+'" data-f="all">全部</button><button class="chip'+(leakFilter==="高"?" active":"")+'" data-f="高">高可信度</button><button class="chip'+(leakFilter==="中"?" active":"")+'" data-f="中">中可信度</button><button class="chip'+(leakFilter==="低"?" active":"")+'" data-f="低">低可信度</button></div>'+cards;
+}
+
+function render(){
+  var h = location.hash.replace("#","");
+  document.getElementById("app").innerHTML = h.indexOf("leaks-")===0 ? leaks(h.slice(6)) : home();
+}
+
+function getGame(gid){ return G.filter(function(x){return x.id===gid})[0]; }
+
+function syncInputsToState(){
+  document.querySelectorAll(".edit-ver").forEach(function(box){
+    var g = getGame(box.dataset.gid);
+    var vIdx = +box.dataset.vidx;
+    if(!g || !g.versions[vIdx]) return;
+    box.querySelectorAll("[data-field]").forEach(function(inp){
+      g.versions[vIdx][inp.dataset.field] = inp.value.trim();
+    });
+    var chars = [];
+    box.querySelectorAll(".char-row").forEach(function(row){
+      var cIdx = +row.dataset.cidx;
+      var orig = g.versions[vIdx].chars[cIdx] || {type:"new"};
+      chars.push({
+        type: orig.type === "re" ? "re" : "new",
+        name: row.querySelector(".char-name").value,
+        attr: row.querySelector(".char-attr").value
+      });
+    });
+    g.versions[vIdx].chars = chars;
+  });
+}
+
+document.addEventListener("click", function(e){
+  var actEl = e.target.closest("[data-act]");
+  if(actEl){
+    var act = actEl.dataset.act;
+    if(act === "toggle-edit"){
+      if(editMode){
+        syncInputsToState();
+        saveToLocalStorage();
+        statusMsg = "已套用編輯內容（已暫存於此瀏覽器；匯出 manual.json 並上傳至 GitHub 可同步給所有人）。";
+      }
+      editMode = !editMode;
+      render();
+      return;
+    }
+    if(act === "save-local"){
+      syncInputsToState();
+      saveToLocalStorage();
+      statusMsg = "已儲存至瀏覽器並更新上方日曆！";
+      render();
+      return;
+    }
+    if(act === "copy-json"){
+      syncInputsToState();
+      saveToLocalStorage();
+      var txt = JSON.stringify(buildManualExportObject(), null, 2);
+      if(navigator.clipboard){
+        navigator.clipboard.writeText(txt).then(function(){
+          statusMsg = "已複製 manual.json 內容到剪貼簿！請貼進 GitHub 的 manual.json 檔案。";
+          render();
+        });
+      }
+      return;
+    }
+    if(act === "download-json"){
+      syncInputsToState();
+      saveToLocalStorage();
+      var blob = new Blob([JSON.stringify(buildManualExportObject(), null, 2)], {type:"application/json"});
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "manual.json";
+      a.click();
+      statusMsg = "已下載 manual.json，上傳覆蓋儲存庫中的 manual.json 即可同步。";
+      render();
+      return;
+    }
+    if(act === "reset-local"){
+      localStorage.removeItem(STORAGE_KEY);
+      location.reload();
+      return;
+    }
+    if(act === "add-char"){
+      syncInputsToState();
+      var g = getGame(actEl.dataset.gid);
+      var vIdx = +actEl.dataset.vidx;
+      g.versions[vIdx].chars.push({name:"", type:"new", attr:""});
+      render();
+      var rows = document.querySelectorAll('.edit-ver[data-gid="'+g.id+'"][data-vidx="'+vIdx+'"] .char-name');
+      if(rows.length) rows[rows.length-1].focus();
+      return;
+    }
+    if(act === "toggle-type"){
+      syncInputsToState();
+      var row = actEl.closest(".char-row");
+      var g2 = getGame(row.dataset.gid);
+      var cObj = g2.versions[+row.dataset.vidx].chars[+row.dataset.cidx];
+      cObj.type = cObj.type === "new" ? "re" : "new";
+      render();
+      return;
+    }
+    if(act === "del-char"){
+      syncInputsToState();
+      var row2 = actEl.closest(".char-row");
+      var g3 = getGame(row2.dataset.gid);
+      g3.versions[+row2.dataset.vidx].chars.splice(+row2.dataset.cidx, 1);
+      render();
+      return;
+    }
+  }
+
+  var f = e.target.closest("[data-f]");
+  if(f){ leakFilter = f.dataset.f; render(); return; }
+
+  var t = e.target.closest("[data-m]");
+  if(t){ M += +t.dataset.m; if(M<0){M=11;Y--} if(M>11){M=0;Y++} sel=null; render(); return; }
+
+  t = e.target.closest(".day");
+  if(t){ sel = t.dataset.k; render(); return; }
+
+  t = e.target.closest(".gh");
+  if(t && !editMode){
+    var gid = t.dataset.gid;
+    openIds[gid] = !openIds[gid];
+    render();
+  }
+});
+
+// 角色輸入快捷鍵：Enter 新增下一位、Alt+N 切新角色、Alt+R 切復刻角色
+document.addEventListener("keydown", function(e){
+  if(!editMode) return;
+  var row = e.target.closest && e.target.closest(".char-row");
+  if(!row) return;
+  var gid = row.dataset.gid, vIdx = +row.dataset.vidx, cIdx = +row.dataset.cidx;
+  var g = getGame(gid);
+  if(!g) return;
+
+  if(e.key === "Enter"){
+    e.preventDefault();
+    syncInputsToState();
+    g.versions[vIdx].chars.splice(cIdx + 1, 0, {name:"", type:"new", attr:""});
+    render();
+    var inputs = document.querySelectorAll('.edit-ver[data-gid="'+gid+'"][data-vidx="'+vIdx+'"] .char-name');
+    if(inputs[cIdx + 1]) inputs[cIdx + 1].focus();
+  } else if(e.altKey && (e.key === "n" || e.key === "N")){
+    e.preventDefault();
+    syncInputsToState();
+    g.versions[vIdx].chars[cIdx].type = "new";
+    render();
+    var inputs2 = document.querySelectorAll('.edit-ver[data-gid="'+gid+'"][data-vidx="'+vIdx+'"] .char-name');
+    if(inputs2[cIdx]) inputs2[cIdx].focus();
+  } else if(e.altKey && (e.key === "r" || e.key === "R")){
+    e.preventDefault();
+    syncInputsToState();
+    g.versions[vIdx].chars[cIdx].type = "re";
+    render();
+    var inputs3 = document.querySelectorAll('.edit-ver[data-gid="'+gid+'"][data-vidx="'+vIdx+'"] .char-name');
+    if(inputs3[cIdx]) inputs3[cIdx].focus();
+  }
+});
+
+window.addEventListener("hashchange", function(){ leakFilter="all"; render(); });
+
+// 載入順序：1. AI 抓到的 data.json -> 2. 儲存庫的 manual.json -> 3. 本機瀏覽器暫存
+Promise.all([
+  fetch("./data.json", {cache:"no-store"}).then(function(r){return r.ok?r.json():null}).catch(function(){return null}),
+  fetch("./manual.json", {cache:"no-store"}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})
+]).then(function(res){
+  var aiData = res[0], repoManual = res[1], localManual = null;
+  try { localManual = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null"); } catch(e){}
+
+  G.forEach(function(g){
+    if(aiData && aiData.games && aiData.games[g.id]) applyGamePatch(g, aiData.games[g.id]);
+    if(repoManual && repoManual.games && repoManual.games[g.id]) applyGamePatch(g, repoManual.games[g.id]);
+    if(localManual && localManual.games && localManual.games[g.id]) applyGamePatch(g, localManual.games[g.id]);
+  });
+
+  if(localManual){
+    statusMsg = "已載入你本機瀏覽器的最新編輯內容（記得匯出 manual.json 上傳以同步至公開網頁）。";
+  } else if(repoManual || aiData){
+    statusMsg = "已同步最新排程與 AI 情報（點右上角可切換編輯模式調整三版本時間與角色）。";
+  }
   rebuildEvents();
   render();
-}).catch(function(){render()});
+});
 </script>
 </body>
 </html>
