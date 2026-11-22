@@ -102,7 +102,10 @@ def summarize_with_gemini(raw_by_game: dict[str, list[dict]]) -> dict:
             }
         return fallback
 
-    client = genai.Client(api_key=api_key)
+    client = genai.Client(
+        api_key=api_key,
+        http_options={"api_version": "v1beta"},
+    )
     today_str = datetime.now(TZ_TW).strftime("%Y-%m-%d")
     game_keys = list(raw_by_game.keys())
 
