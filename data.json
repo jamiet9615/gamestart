@@ -1,22 +1,451 @@
 {
-  "updated_at": "2026-11-25 15:42:08",
+  "updated_at": "2026-11-25 17:22:14",
   "games": {
     "genshin": {
-      "leaks": []
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
+      "leaks": [
+        {
+          "title": "「壞滅肇始之時」系列桌布現已上架！",
+          "summary": "活動開始:0 結束:0 旅行者可以點擊連結下載更多尺寸的桌布哦~ https://hoyo.link/mMLOfa7L3",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558483"
+        },
+        {
+          "title": "「厲影定格錄」活動：留影挑戰",
+          "summary": "活動開始:0 結束:0 〓活動獎勵〓 〓活動時間〓 2026/11/27 10:00 - 2026/12/07 03:59 〓參與條件〓 冒險等階≥20級 完成魔神任務：序章·第三幕「巨龍與自由之歌」 完成魔神任務：第七章·第一幕「無神憐愛的雪國」中的「沉寂之地的槍聲」 ※完成至冬冒險筆記中的各項世界任務後體驗更佳。 〓活動說明〓 ● 旅行者需要前往指定留影點，用「定格力量」留影機按特定要求記錄下各類畫片。 ● 活動開始的前5天，每天將開放2個留影地點，部分留影地點需完成前置任務解鎖。 ● 活動期間，在每個留影地點首次完成留影後，可以在活動介面領取獎勵。",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558481"
+        },
+        {
+          "title": "7.2版本分享HoYoverse儲值中心贏原石活動——第二期",
+          "summary": "活動開始:0 結束:0 Olah！旅行者好~ 7.2版本HoYoverse儲值中心分享活動獎勵加碼來襲！ 前往儲值中心，「月之六」版本至今首次儲值即可獲得300個原石！還可享8%原石加贈，旅行者記得互相分享傳播！ 7.2版本第二期分享活動來襲！現在開始，將本期「宣傳圖+連結」分享給其他旅行者，讓更多的旅行者瞭解HoYoverse儲值中心或讓更多的旅行者來參與本活動，都有可能獲得額外120個原石！ 【參與方式】 成功參與重點： 1.分享到HoYoLAB以外的任意平臺才算成功參與 2.分享给除自己以外的其他人才算成功參與 3.不可使用往期成功參與截圖參與本期分享活動 4.成功分享截",
+          "confidence": "高",
+          "date": "2026-11-24",
+          "url": "https://www.hoyolab.com/article/47546927"
+        },
+        {
+          "title": "「原石獎勵」參與茲白、莉奈婭主題討論，贏原石",
+          "summary": "活動開始:0 結束:0 Olah！旅行者好~ 參與角色討論必得頭像框獎勵，還有機會贏得原石哦~ 茲白主題討論 如今我依然習慣讀書，畢竟我所知的故土和故人，只怕也只存在於那些書裡了，見到錯漏的時候，我也會進行批註。 旅行者平時有什麼喜歡看的書籍嗎，也分享給茲白看看吧~ 莉奈婭主題討論 如果可以的話，今後我也想聽你分享那些我不曾參與的冒險，作為交換…我會為你在黃金獵犬號上留一個位置的！ 講講你在提瓦特冒險時的故事給莉奈婭聽吧~",
+          "confidence": "高",
+          "date": "2026-11-24",
+          "url": "https://www.hoyolab.com/article/47546919"
+        },
+        {
+          "title": "忝為社稷神，自當死社稷——茲白·小記",
+          "summary": "活動開始:0 結束:0 為守護故土，茲白曾以身對抗天罰。幸而，她最終還是循著月光，回到了她所珍愛的故土。 旅行者好呀，「華黍由儀」祈願將於11月24日18:00開放，屆時「駒隙隱泉·茲白(岩)」的祈願抽取機率將大幅提升！",
+          "confidence": "高",
+          "date": "2026-11-22",
+          "url": "https://www.hoyolab.com/article/47529570"
+        },
+        {
+          "title": "終點就在那裡，但路有許多條｜「莉奈婭」·小記",
+          "summary": "活動開始:0 結束:0 生活應在每一個當下，而非等待未來的某一天。命運無法改變，可同樣不變的，是家人間註定相連的牽絆。 「呀吼吼博物誌」活動祈願將於2026年11月24日18:00開放，屆時，限定五星角色「博聞異旅·莉奈婭(岩)」的祈願抽取機率將大幅提升！",
+          "confidence": "高",
+          "date": "2026-11-22",
+          "url": "https://www.hoyolab.com/article/47526860"
+        }
+      ]
     },
     "hsr": {
-      "leaks": []
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
+      "leaks": [
+        {
+          "title": "V4.7 Discord任務即將結束！",
+          "summary": "活動開始:0 結束:0 開拓者們，V4.7 Discord任務將於12月1日結束！ 記得及時參與活動並領取獎勵哦～ 立刻參與：https://hoyo.link/5nVmwECaT",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47559323"
+        },
+        {
+          "title": "「帕姆展覽館 | 此刻，將群星付之一笑•其一」",
+          "summary": "活動開始:0 結束:0 「今天過後，全銀河都會知道，星穹列車背後，是兩位再度啟程，也再次攜手的神明。」",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558482"
+        },
+        {
+          "title": "「次元分裂」活動：次元飾品限時雙倍掉落",
+          "summary": "活動開始:0 結束:0 ▌活動時間 2026/11/23 04:00 - 2026/12/07 03:59 (伺服器時間) ▌參與條件 解鎖「次元飾品」 ▌活動說明 「次元分裂」活動期間，在「模擬宇宙」中獲得沉浸獎勵或進行「飾品提取」時，可獲得雙倍獎勵。 消耗活動雙倍獎勵次數與沉浸器（或開拓力）後，將在原有獎勵之外額外獲得一次獎勵。 活動期間，雙倍獎勵的次數有限，可用的剩餘次數和次數上限以「次元分裂」活動介面的顯示內容為準。",
+          "confidence": "高",
+          "date": "2026-11-22",
+          "url": "https://www.hoyolab.com/article/47526861"
+        },
+        {
+          "title": "限定五星角色登入即領",
+          "summary": "活動開始:0 結束:0 開拓者好呀～4.8版本更新後至5.0版本結束前，登入遊戲即可領取限定五星角色「耀嘉音（同諧•量子）」×1及其直升 60 級養成素材補給！",
+          "confidence": "高",
+          "date": "2026-11-20",
+          "url": "https://www.hoyolab.com/article/47507004"
+        },
+        {
+          "title": "「星穹列車攻略指南」網頁更新，4.7版本攻略徵稿活動火熱進行中",
+          "summary": "活動開始:0 結束:0 開拓者您好： 「星神★阿哈」的配隊秘籍和養成體驗、逐光撿金玩法中的攻略思路、靈光乍現的過關時刻、貨幣戰爭的巧妙搭配…… 我們誠邀你一同踏入這場全新的星際旅途 以智慧為筆、以勇氣為墨，記錄屬於你的獨特篇章。 分享靈感、交流見解，與群星間的同行者攜手前行，讓思考與創意的光輝點亮星海！ 參與攻略投稿，分享你的獨家心得，贏6000星瓊大獎！ >>點此前往<< ▌投稿時間 2026/11/11 14:00 - 2026/12/22 23:59（UTC+8） ▌參與方式",
+          "confidence": "高",
+          "date": "2026-11-16",
+          "url": "https://www.hoyolab.com/article/47464625"
+        },
+        {
+          "title": "歡迎來到樂園 | 來自點星船的邀請函",
+          "summary": "活動開始:0 結束:0 社長大人！黑心社長寄來了請柬，說是要邀請全報社的狸貓都去參觀點星船呶～ 狸貓們已經洗得香噴噴，就等社長大人點頭呶！ ✧ 最終解釋權歸狸狸週刊所有 ✧ ✧ 如有雷同，阿哈全責 ✧",
+          "confidence": "高",
+          "date": "2026-11-14",
+          "url": "https://www.hoyolab.com/article/47436372"
+        }
+      ]
     },
     "zzz": {
-      "leaks": []
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
+      "leaks": [
+        {
+          "title": "代理人未歸檔影像｜挽晝篇",
+          "summary": "活動開始:0 結束:0 「別擔心，我來解決一切。」 「是『我們』才對喔。」",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558871"
+        },
+        {
+          "title": "生日快樂比利｜星徽比利·空中型",
+          "summary": "活動開始:0 結束:0 「店長店長！看看我的新載具怎麼樣！」 「一位好心的邦布市民借我試駕的，是不是很適合？」 「是時候再做個升級了！」 「星徽騎士即將解鎖全新空戰形態，空中委託也將不在話下！」 「呃……那個……比利，我感覺這輛車好像不太妙……」",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558687"
+        },
+        {
+          "title": "焦點劇場·劇目單｜以挽晝之名",
+          "summary": "活動開始:0 結束:0 「此劇獻給——為羅斯凱利法點亮長夜的眾人。」",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558594"
+        },
+        {
+          "title": "《絕區零》挽晝角色展示｜日隕之前",
+          "summary": "活動開始:0 結束:0 就好像那如此沉重的太陽，替她宣判了命運。 ▼YouTube https://youtu.be/fHMp66kAE-M ▼預約3.4版本領菲林和紀念名片！ https://hoyo.link/5yqHKFHnS",
+          "confidence": "高",
+          "date": "2026-11-25",
+          "url": "https://www.hoyolab.com/article/47558480"
+        },
+        {
+          "title": "「資料懸賞-實戰模擬」活動說明",
+          "summary": "活動開始:0 結束:0 【活動時間】 2026/11/25 04:00 - 2026/11/30 03:59（伺服器時間） 【參與條件】 在主線第一章「貓的失物」中解鎖「實戰模擬室」後即可參與。 【活動說明】 • 「資料懸賞-實戰模擬」活動期間，繩匠進入「實戰模擬室」，選擇任意怪物卡並成功通過挑戰，即可獲得雙倍獎勵！ • 活動期間，每日可增益5張怪物卡，增益效果將在每日04:00（伺服器時間）重置。",
+          "confidence": "高",
+          "date": "2026-11-23",
+          "url": "https://www.hoyolab.com/article/47537269"
+        },
+        {
+          "title": "生日快樂「席德」｜再來一次！",
+          "summary": "活動開始:0 結束:0 「謝謝繩匠今天來陪我打電玩，好久沒有這麼熱血沸騰了～」 「來，請你吃冰棒降降溫～嗯呣嗯呣——」 「咦？這根好像中獎了！送給你啦～等你下次想吃的時候拿這個來兌換吧～」",
+          "confidence": "高",
+          "date": "2026-11-22",
+          "url": "https://www.hoyolab.com/article/47527098"
+        }
+      ]
     },
     "wuwa": {
-      "leaks": []
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
+      "leaks": [
+        {
+          "title": "討論牆 | 《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - LINE TODAY",
+          "summary": "討論牆 | 《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 LINE TODAY",
+          "confidence": "中",
+          "date": "2026-11-22",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04U1l4cm1uMFNMNG9WZks0SHg2ZVppOENLakJLeGlWX0Yzd21DTmhWeGNtRGF6TXphVm4tdE4tbzUwWWR1VXlCaVpRMkZTbkViLUFVVy12Mmg3U0c4OGxrVGNfWXk?oc=5"
+        },
+        {
+          "title": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲《Wuthering Waves》 - GNN 新聞網",
+          "summary": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲《Wuthering Waves》 GNN 新聞網",
+          "confidence": "中",
+          "date": "2026-11-21",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HeGZaT1lzellYRDVJYnFQSFV5MjNrbWd2UjRfWmhWc3J5UVowTEYzZjVGNF8yMm5ISGRfYlRxNGdZZGU1OXVXWlgyQVpHaVpGcnVqd0M4Slo?oc=5"
+        },
+        {
+          "title": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - 上報Up Media",
+          "summary": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 上報Up Media",
+          "confidence": "中",
+          "date": "2026-11-21",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9UZ21QMU5mYkliMkpMNkRrWEpoRS1MTWpsRTkzZnkwaVE1QTNoa3U4d2FTRTA2Vy1ibGUtcmdxejFHYVVWX3ZDeHVPYThSOGZ5bFVDYm1lZUlrRDBDeGc?oc=5"
+        },
+        {
+          "title": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - 蕃新聞",
+          "summary": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 蕃新聞",
+          "confidence": "中",
+          "date": "2026-11-21",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qblMyNW5PeHhJM1p0U25ZUVB0T3J3R3RFeEJWNWJHeVpLVTVyV2hxMmlBY1NPU01vRVJZc0VPN3g5NW5nRnluR3o5aEtFcU15aWc?oc=5"
+        },
+        {
+          "title": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 股市爆料同學會 - CMoney",
+          "summary": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 股市爆料同學會 CMoney",
+          "confidence": "中",
+          "date": "2026-11-21",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXbG1ZVzFrMlBoTGpMa1lhNlVmUEN6bWVGTHVwdEJ6ZDBZVG9Zcl80T0dYSjNjeUpBYUtJM0dOdTZ1X040UEhjWFlGX2o3UnY2cFNrcVpUTl8?oc=5"
+        },
+        {
+          "title": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 - Ludens Media",
+          "summary": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 Ludens Media",
+          "confidence": "中",
+          "date": "2026-11-21",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50SGx0TlR1QTU5TC1IV3BlTEVpMC1WbXk5c3RzQ3B0TzFEQ2toUWNDbS1FN1hZUWFMVWlBaDhBd2lPNE5HZElpSUQxQS1vM3Q1amR0YjdUdkEycWJoS1lOTmJWbHRMay1RSEE?oc=5"
+        }
+      ]
     },
     "endfield": {
-      "leaks": []
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
+      "leaks": [
+        {
+          "title": "PIZZA-LA 推出《明日方舟：終末地》聯名比薩套餐，12 月 3 日起附贈原創週邊與遊戲兌換碼 - www.haveagood-holiday.com",
+          "summary": "PIZZA-LA 推出《明日方舟：終末地》聯名比薩套餐，12 月 3 日起附贈原創週邊與遊戲兌換碼 www.haveagood-holiday.com",
+          "confidence": "中",
+          "date": "2026-11-25",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQS15UmFBQzN3cTZIYTZvbmpFLWtNR0dsMDgxa053Q0NzQldhd3Z3a1VhVWFEZ3hnUzdSNnhPMVdkQk5lekJpM1lQby1uZVdfQUFVVG9JQ3liRnE2ZkgxVGxhdGpxZ3dKM0htVXlKV2t1RU9NMUlHYmpXVnY1eG16cU51WGtIWHRsQm9RTHk2bUxCcWNFM0FBcWI0VWVBMmc?oc=5"
+        },
+        {
+          "title": "Arknights: Endfield update mandates reinstall, adds Kay and new area - A 90s Kid",
+          "summary": "Arknights: Endfield update mandates reinstall, adds Kay and new area A 90s Kid",
+          "confidence": "中",
+          "date": "2026-11-25",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaFl4cWFrdUV6V3FDRExHZVJMV241cmlBOUFvYjFYMldHOHI2TXYwWDk1Vlc3eUxkZkRKYk1tZUp5VEdldjBZTWl6Z0xqWFdVRUxXUTZjcUpTeUNueFp6ZlRlR0QxbFJ5T2ZITWhSUUJiWVdIam8tQ2czaU5ydzFiRFA2dEZfLTlNcFJsREptN28zX2htTEE?oc=5"
+        },
+        {
+          "title": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線公開2.0 版本前瞻內容《Arknights: Endfield》 - GNN 新聞網",
+          "summary": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線公開2.0 版本前瞻內容《Arknights: Endfield》 GNN 新聞網",
+          "confidence": "中",
+          "date": "2026-11-23",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5OQnM0WnZxRXdYS1JfR3RZdjdkTWhVWHN6SEhTNXROc1F1eTJKT25Pd0hNWnJoVWF4My1ZaW13dlAxend3Z0FsYzRsY2lQTjZ6Y3o2c3FTS0Y?oc=5"
+        },
+        {
+          "title": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線 公開 2.0 版本前瞻內容 - CMoney",
+          "summary": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線 公開 2.0 版本前瞻內容 CMoney",
+          "confidence": "中",
+          "date": "2026-11-23",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYUGZ3Ql9CWE9sRnUzdFRPX3NuNTVRd25DNGY5dUhqTzh6VWVhakk5YjgzUzM2Tldvd1R4azJ6MUZyOHF2TEluRjhpZlZXTEhBQm1HYjFFOWw?oc=5"
+        },
+        {
+          "title": "《明日方舟：終末地》11月25日推全新版本！6星幹員「小刻」登場 2.0將開放羅德島探索 - 上報Up Media",
+          "summary": "《明日方舟：終末地》11月25日推全新版本！6星幹員「小刻」登場 2.0將開放羅德島探索 上報Up Media",
+          "confidence": "中",
+          "date": "2026-11-23",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LT2lnc3BmTkUwRUJiNDVxVk5HeUtQNWxMU1lSQktmT2J0S19qVzZqYThIZjhyMmVpMjloVUVkTUpGUV9Pa0pTaEN3dXlaY3l3NmdWd1duOEY?oc=5"
+        },
+        {
+          "title": "《明日方舟：終末地》把統一布丁變成「甜蜜補給」？官方預告聯名企劃，合作內容即將揭曉 - SouNova 少女星",
+          "summary": "《明日方舟：終末地》把統一布丁變成「甜蜜補給」？官方預告聯名企劃，合作內容即將揭曉 SouNova 少女星",
+          "confidence": "中",
+          "date": "2026-11-23",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQXzdVenRuMjl3RW1QSmdWMjVKdFJGRlhXTDRXTWx2WXFPd29RbGFqUl82cDVCaGNMSkVHTzVUQW42VzhpWG1HQ1BhNkU2c1pYYWZ5YkpiMkZqLTJieDk2UG1rZWhzS0J3ODZGM2F0aklLTkNtbDhZYUhvaUh6LTM1SmhfM3E?oc=5"
+        }
+      ]
     },
     "nte": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
+      "leaks": [
+        {
+          "title": "Nte 1.5 Release Time & Countdown (Neverness to Everness) - IMDb",
+          "summary": "Nte 1.5 Release Time & Countdown (Neverness to Everness) IMDb",
+          "confidence": "中",
+          "date": "2026-11-13",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85Ym03U3o3QVdYVUdSZW8zZWhNRnp2U2xaY2VhcW80MjE0ZTZYeHFoRkhId1ZhMmZVZlNNRXhQRG4xc0Izc19FQzRJbm16NldrLUE1TTRvVDA4cUpwN2RaNA?oc=5"
+        },
+        {
+          "title": "《異環》1.5 版本「致電，空想迷數」開啟全新S 級角色「曳爾沐」登場《NTE: Neverness to Everness》 - GNN 新聞網",
+          "summary": "《異環》1.5 版本「致電，空想迷數」開啟全新S 級角色「曳爾沐」登場《NTE: Neverness to Everness》 GNN 新聞網",
+          "confidence": "中",
+          "date": "2026-11-11",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jY0t3YlBPRFQ0SWl3WldvNmNqdE1GTnRrcmtGZlFYN091VF9VX1ZMQXBVX1FxVGV0WWRud2VnYkMwcFJTdUU3UTZGTEYwRUt6eF9QcTZ4Y0s?oc=5"
+        },
+        {
+          "title": "Everything revealed for Neverness to Everness Version 1.5–Exe, Elyms, vehicles, events - GosuGamers",
+          "summary": "Everything revealed for Neverness to Everness Version 1.5–Exe, Elyms, vehicles, events GosuGamers",
+          "confidence": "中",
+          "date": "2026-10-28",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOTBhUWNkOEtnYjBzdnRfa2xlLXRYVkN6Z3o3UThCNUsxVmtiX2ZzXzh6Q3VTb2NUY2U1dTN1LUxpSjY3OGQ4eWlCMFdrSUZBY0YzNjBYNTdWM1VnT2N6TU1uaERLNHlXQjBod1BwZFFWa0RsZk9ZRHN3TlAxVlpKbGFNNEZkYkdOcmxFNmp0ZkJCMGI4NWFkRzNpeE0zVlhES1Fob1RCYUMyd0w4Wmk4MEZ6QkVVVGNvMnBUMVpuMzhWRnY4QzVSMDk3ZEFQbGxn?oc=5"
+        },
+        {
+          "title": "【異環】公測前瞻懶人包💥▸開服版本超過470抽！S級角色免費送滿6+5？限定卡池「絕對不歪」！自選S別選錯！卡池抽取建議？三測玩家帶你快速吸收！ ▹璐洛洛 - 電腦王阿達",
+          "summary": "【異環】公測前瞻懶人包💥▸開服版本超過470抽！S級角色免費送滿6+5？限定卡池「絕對不歪」！自選S別選錯！卡池抽取建議？三測玩家帶你快速吸收！ ▹璐洛洛 電腦王阿達",
+          "confidence": "中",
+          "date": "2026-10-21",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE10VzNqQU0zb1dyZ0haTDFDd196NVRwRWRiWWwtbjdPNVZOdnkxN0lnR2pna0g5Q25ZOXZuc1VtMjh6ZnNvY19IcHYwOUZ0RDlYTlE?oc=5"
+        }
+      ]
+    },
+    "tot": {
+      "versions": [
+        {
+          "label": "當前版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        },
+        {
+          "label": "下下個版本",
+          "ver": "",
+          "start": "",
+          "live": "",
+          "mid": "",
+          "chars": []
+        }
+      ],
       "leaks": []
     }
   }
