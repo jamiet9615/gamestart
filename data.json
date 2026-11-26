@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 17:22:14",
+  "updated_at": "2026-11-26 15:35:09",
   "games": {
     "genshin": {
       "versions": [
@@ -174,6 +174,20 @@
       ],
       "leaks": [
         {
+          "title": "代理人機制介紹｜挽晝篇",
+          "summary": "活動開始:0 結束:0 更新即將完成…… 資料庫中已收錄代理人「挽晝」的戰鬥相關資訊，主要內容解析完畢，請查收。 「挽晝，不會辜負你的期待。」",
+          "confidence": "高",
+          "date": "2026-11-26",
+          "url": "https://www.hoyolab.com/article/47568244"
+        },
+        {
+          "title": "Random Play｜全像試煉－挽晝&知更鳥",
+          "summary": "活動開始:0 結束:0 「燈塔未熄——正因我們並肩於此。」 「無需畏懼黑暗，因為我們會一同歌唱。」 *開發中版本，請以正式上線內容為準。 ▼預約3.4版本領菲林和紀念名片！ https://hoyo.link/5yqHKFHnS",
+          "confidence": "高",
+          "date": "2026-11-26",
+          "url": "https://www.hoyolab.com/article/47568017"
+        },
+        {
           "title": "代理人未歸檔影像｜挽晝篇",
           "summary": "活動開始:0 結束:0 「別擔心，我來解決一切。」 「是『我們』才對喔。」",
           "confidence": "高",
@@ -200,20 +214,6 @@
           "confidence": "高",
           "date": "2026-11-25",
           "url": "https://www.hoyolab.com/article/47558480"
-        },
-        {
-          "title": "「資料懸賞-實戰模擬」活動說明",
-          "summary": "活動開始:0 結束:0 【活動時間】 2026/11/25 04:00 - 2026/11/30 03:59（伺服器時間） 【參與條件】 在主線第一章「貓的失物」中解鎖「實戰模擬室」後即可參與。 【活動說明】 • 「資料懸賞-實戰模擬」活動期間，繩匠進入「實戰模擬室」，選擇任意怪物卡並成功通過挑戰，即可獲得雙倍獎勵！ • 活動期間，每日可增益5張怪物卡，增益效果將在每日04:00（伺服器時間）重置。",
-          "confidence": "高",
-          "date": "2026-11-23",
-          "url": "https://www.hoyolab.com/article/47537269"
-        },
-        {
-          "title": "生日快樂「席德」｜再來一次！",
-          "summary": "活動開始:0 結束:0 「謝謝繩匠今天來陪我打電玩，好久沒有這麼熱血沸騰了～」 「來，請你吃冰棒降降溫～嗯呣嗯呣——」 「咦？這根好像中獎了！送給你啦～等你下次想吃的時候拿這個來兌換吧～」",
-          "confidence": "高",
-          "date": "2026-11-22",
-          "url": "https://www.hoyolab.com/article/47527098"
         }
       ]
     },
@@ -267,6 +267,13 @@
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9UZ21QMU5mYkliMkpMNkRrWEpoRS1MTWpsRTkzZnkwaVE1QTNoa3U4d2FTRTA2Vy1ibGUtcmdxejFHYVVWX3ZDeHVPYThSOGZ5bFVDYm1lZUlrRDBDeGc?oc=5"
         },
         {
+          "title": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 - Ludens Media",
+          "summary": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 Ludens Media",
+          "confidence": "中",
+          "date": "2026-11-21",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50SGx0TlR1QTU5TC1IV3BlTEVpMC1WbXk5c3RzQ3B0TzFEQ2toUWNDbS1FN1hZUWFMVWlBaDhBd2lPNE5HZElpSUQxQS1vM3Q1amR0YjdUdkEycWJoS1lOTmJWbHRMay1RSEE?oc=5"
+        },
+        {
           "title": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - 蕃新聞",
           "summary": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 蕃新聞",
           "confidence": "中",
@@ -274,18 +281,11 @@
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qblMyNW5PeHhJM1p0U25ZUVB0T3J3R3RFeEJWNWJHeVpLVTVyV2hxMmlBY1NPU01vRVJZc0VPN3g5NW5nRnluR3o5aEtFcU15aWc?oc=5"
         },
         {
-          "title": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 股市爆料同學會 - CMoney",
-          "summary": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 股市爆料同學會 CMoney",
+          "title": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 遊戲新聞 - PChome Online 新聞",
+          "summary": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 遊戲新聞 PChome Online 新聞",
           "confidence": "中",
           "date": "2026-11-21",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXbG1ZVzFrMlBoTGpMa1lhNlVmUEN6bWVGTHVwdEJ6ZDBZVG9Zcl80T0dYSjNjeUpBYUtJM0dOdTZ1X040UEhjWFlGX2o3UnY2cFNrcVpUTl8?oc=5"
-        },
-        {
-          "title": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 - Ludens Media",
-          "summary": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 Ludens Media",
-          "confidence": "中",
-          "date": "2026-11-21",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50SGx0TlR1QTU5TC1IV3BlTEVpMC1WbXk5c3RzQ3B0TzFEQ2toUWNDbS1FN1hZUWFMVWlBaDhBd2lPNE5HZElpSUQxQS1vM3Q1amR0YjdUdkEycWJoS1lOTmJWbHRMay1RSEE?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVzh4R0xuRGhzOTl0OWw5em15Qi1TQXFRa2JxNGd2UUtyZE5jdUNJWVY1NlpRc2pxM0hORjlvaTdNY2xjaDFMSW8ydEJSbFZuWHY3clIyeUY0emJmc25zWDROc1lWd2t5d3RucEJnamFEOFlVZE42UElRc0NKUklQSWpVd1I?oc=5"
         }
       ]
     },
@@ -318,13 +318,6 @@
       ],
       "leaks": [
         {
-          "title": "PIZZA-LA 推出《明日方舟：終末地》聯名比薩套餐，12 月 3 日起附贈原創週邊與遊戲兌換碼 - www.haveagood-holiday.com",
-          "summary": "PIZZA-LA 推出《明日方舟：終末地》聯名比薩套餐，12 月 3 日起附贈原創週邊與遊戲兌換碼 www.haveagood-holiday.com",
-          "confidence": "中",
-          "date": "2026-11-25",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQS15UmFBQzN3cTZIYTZvbmpFLWtNR0dsMDgxa053Q0NzQldhd3Z3a1VhVWFEZ3hnUzdSNnhPMVdkQk5lekJpM1lQby1uZVdfQUFVVG9JQ3liRnE2ZkgxVGxhdGpxZ3dKM0htVXlKV2t1RU9NMUlHYmpXVnY1eG16cU51WGtIWHRsQm9RTHk2bUxCcWNFM0FBcWI0VWVBMmc?oc=5"
-        },
-        {
           "title": "Arknights: Endfield update mandates reinstall, adds Kay and new area - A 90s Kid",
           "summary": "Arknights: Endfield update mandates reinstall, adds Kay and new area A 90s Kid",
           "confidence": "中",
@@ -332,11 +325,25 @@
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaFl4cWFrdUV6V3FDRExHZVJMV241cmlBOUFvYjFYMldHOHI2TXYwWDk1Vlc3eUxkZkRKYk1tZUp5VEdldjBZTWl6Z0xqWFdVRUxXUTZjcUpTeUNueFp6ZlRlR0QxbFJ5T2ZITWhSUUJiWVdIam8tQ2czaU5ydzFiRFA2dEZfLTlNcFJsREptN28zX2htTEE?oc=5"
         },
         {
+          "title": "Arknights: Endfield maintenance on November 24: downtime and download sizes - jeu.video",
+          "summary": "Arknights: Endfield maintenance on November 24: downtime and download sizes jeu.video",
+          "confidence": "中",
+          "date": "2026-11-24",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORmN4THlJdVN0Sy1zUG41LUN2TGtzMjd4TC1mamxlRkFHOHg4YTNpeVVvTDdrT3c2akNHQ19uOFFsWU9ZUFNyd0pCdU1FNERsVU5DWVR0a1dHUjJNTzFJWGZMR1VpMmpfdW1qeG1yUDNEZWJ5aUVsUkhmTjNTbUxoeE5R?oc=5"
+        },
+        {
           "title": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線公開2.0 版本前瞻內容《Arknights: Endfield》 - GNN 新聞網",
           "summary": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線公開2.0 版本前瞻內容《Arknights: Endfield》 GNN 新聞網",
           "confidence": "中",
           "date": "2026-11-23",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5OQnM0WnZxRXdYS1JfR3RZdjdkTWhVWHN6SEhTNXROc1F1eTJKT25Pd0hNWnJoVWF4My1ZaW13dlAxend3Z0FsYzRsY2lQTjZ6Y3o2c3FTS0Y?oc=5"
+        },
+        {
+          "title": "《明日方舟：終末地》把統一布丁變成「甜蜜補給」？官方預告聯名企劃，合作內容即將揭曉 - SouNova 少女星",
+          "summary": "《明日方舟：終末地》把統一布丁變成「甜蜜補給」？官方預告聯名企劃，合作內容即將揭曉 SouNova 少女星",
+          "confidence": "中",
+          "date": "2026-11-23",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQXzdVenRuMjl3RW1QSmdWMjVKdFJGRlhXTDRXTWx2WXFPd29RbGFqUl82cDVCaGNMSkVHTzVUQW42VzhpWG1HQ1BhNkU2c1pYYWZ5YkpiMkZqLTJieDk2UG1rZWhzS0J3ODZGM2F0aklLTkNtbDhZYUhvaUh6LTM1SmhfM3E?oc=5"
         },
         {
           "title": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線 公開 2.0 版本前瞻內容 - CMoney",
@@ -351,13 +358,6 @@
           "confidence": "中",
           "date": "2026-11-23",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LT2lnc3BmTkUwRUJiNDVxVk5HeUtQNWxMU1lSQktmT2J0S19qVzZqYThIZjhyMmVpMjloVUVkTUpGUV9Pa0pTaEN3dXlaY3l3NmdWd1duOEY?oc=5"
-        },
-        {
-          "title": "《明日方舟：終末地》把統一布丁變成「甜蜜補給」？官方預告聯名企劃，合作內容即將揭曉 - SouNova 少女星",
-          "summary": "《明日方舟：終末地》把統一布丁變成「甜蜜補給」？官方預告聯名企劃，合作內容即將揭曉 SouNova 少女星",
-          "confidence": "中",
-          "date": "2026-11-23",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQXzdVenRuMjl3RW1QSmdWMjVKdFJGRlhXTDRXTWx2WXFPd29RbGFqUl82cDVCaGNMSkVHTzVUQW42VzhpWG1HQ1BhNkU2c1pYYWZ5YkpiMkZqLTJieDk2UG1rZWhzS0J3ODZGM2F0aklLTkNtbDhZYUhvaUh6LTM1SmhfM3E?oc=5"
         }
       ]
     },
@@ -402,6 +402,13 @@
           "confidence": "中",
           "date": "2026-11-11",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jY0t3YlBPRFQ0SWl3WldvNmNqdE1GTnRrcmtGZlFYN091VF9VX1ZMQXBVX1FxVGV0WWRud2VnYkMwcFJTdUU3UTZGTEYwRUt6eF9QcTZ4Y0s?oc=5"
+        },
+        {
+          "title": "Version 1.5 [Once Upon a Glitched Call] Patch Notes - NTE",
+          "summary": "Version 1.5 [Once Upon a Glitched Call] Patch Notes NTE",
+          "confidence": "中",
+          "date": "2026-11-09",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1heVhmWHNCYU5UTUNpY25fQktHMFgzQkREVTF3aUdFUlcyRDhYQ1otRXdKYVQzbXFCTkNsN0F1emUyd1hRaEJwT19GNk1mOUlGQTdvYVlfaW5LUHY2TWFBQXc3cy1SeS1wcTBkdG05Vi1GOTRZZU9XekdPb0hsMUE?oc=5"
         },
         {
           "title": "Everything revealed for Neverness to Everness Version 1.5–Exe, Elyms, vehicles, events - GosuGamers",
