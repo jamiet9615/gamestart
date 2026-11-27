@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 15:35:09",
+  "updated_at": "2026-11-27 15:32:35",
   "games": {
     "genshin": {
       "versions": [
@@ -29,6 +29,13 @@
         }
       ],
       "leaks": [
+        {
+          "title": "《原神》官方Threads帳號現已上線！",
+          "summary": "活動開始:0 結束:0 《原神》官方Threads帳號現已上線，點擊下方連結參與活動，即有機會獲得800個原石獎勵！ >>> https://hoyo.link/ht0O3it00",
+          "confidence": "高",
+          "date": "2026-11-27",
+          "url": "https://www.hoyolab.com/article/47577044"
+        },
         {
           "title": "「壞滅肇始之時」系列桌布現已上架！",
           "summary": "活動開始:0 結束:0 旅行者可以點擊連結下載更多尺寸的桌布哦~ https://hoyo.link/mMLOfa7L3",
@@ -63,13 +70,6 @@
           "confidence": "高",
           "date": "2026-11-22",
           "url": "https://www.hoyolab.com/article/47529570"
-        },
-        {
-          "title": "終點就在那裡，但路有許多條｜「莉奈婭」·小記",
-          "summary": "活動開始:0 結束:0 生活應在每一個當下，而非等待未來的某一天。命運無法改變，可同樣不變的，是家人間註定相連的牽絆。 「呀吼吼博物誌」活動祈願將於2026年11月24日18:00開放，屆時，限定五星角色「博聞異旅·莉奈婭(岩)」的祈願抽取機率將大幅提升！",
-          "confidence": "高",
-          "date": "2026-11-22",
-          "url": "https://www.hoyolab.com/article/47526860"
         }
       ]
     },
@@ -174,6 +174,34 @@
       ],
       "leaks": [
         {
+          "title": "代理人機制介紹｜知更鳥篇",
+          "summary": "活動開始:0 結束:0 更新即將完成…… 資料庫中已收錄代理人「知更鳥」的戰鬥相關資訊，主要內容解析完畢，請查收。 「讓今天的舞台熱鬧起來吧！」",
+          "confidence": "高",
+          "date": "2026-11-27",
+          "url": "https://www.hoyolab.com/article/47577198"
+        },
+        {
+          "title": "《絕區零》挽晝動畫短片｜最後的旅途",
+          "summary": "活動開始:0 結束:0 「挽晝，你和教授一直都不一樣……你一直都能看見，不是嗎？」 ▼YouTube https://youtu.be/Vv5ZTHtJhz8 ▼預約3.4版本領菲林和紀念名片！ https://hoyo.link/5yqHKFHnS",
+          "confidence": "高",
+          "date": "2026-11-27",
+          "url": "https://www.hoyolab.com/article/47576910"
+        },
+        {
+          "title": "代理人未歸檔影像｜知更鳥篇",
+          "summary": "活動開始:0 結束:0 「你好，我是知更鳥。很高興能與你相遇。」",
+          "confidence": "高",
+          "date": "2026-11-26",
+          "url": "https://www.hoyolab.com/article/47570535"
+        },
+        {
+          "title": "非賣品影像｜挽晝",
+          "summary": "活動開始:0 結束:0 「好啦——三、二、一，看鏡頭！」 「耶——！！」 「還要拍嗎？最近已經拍很多了吧……」 ▼預約3.4版本領菲林和紀念名片！ https://hoyo.link/5yqHKFHnS",
+          "confidence": "高",
+          "date": "2026-11-26",
+          "url": "https://www.hoyolab.com/article/47570417"
+        },
+        {
           "title": "代理人機制介紹｜挽晝篇",
           "summary": "活動開始:0 結束:0 更新即將完成…… 資料庫中已收錄代理人「挽晝」的戰鬥相關資訊，主要內容解析完畢，請查收。 「挽晝，不會辜負你的期待。」",
           "confidence": "高",
@@ -186,34 +214,6 @@
           "confidence": "高",
           "date": "2026-11-26",
           "url": "https://www.hoyolab.com/article/47568017"
-        },
-        {
-          "title": "代理人未歸檔影像｜挽晝篇",
-          "summary": "活動開始:0 結束:0 「別擔心，我來解決一切。」 「是『我們』才對喔。」",
-          "confidence": "高",
-          "date": "2026-11-25",
-          "url": "https://www.hoyolab.com/article/47558871"
-        },
-        {
-          "title": "生日快樂比利｜星徽比利·空中型",
-          "summary": "活動開始:0 結束:0 「店長店長！看看我的新載具怎麼樣！」 「一位好心的邦布市民借我試駕的，是不是很適合？」 「是時候再做個升級了！」 「星徽騎士即將解鎖全新空戰形態，空中委託也將不在話下！」 「呃……那個……比利，我感覺這輛車好像不太妙……」",
-          "confidence": "高",
-          "date": "2026-11-25",
-          "url": "https://www.hoyolab.com/article/47558687"
-        },
-        {
-          "title": "焦點劇場·劇目單｜以挽晝之名",
-          "summary": "活動開始:0 結束:0 「此劇獻給——為羅斯凱利法點亮長夜的眾人。」",
-          "confidence": "高",
-          "date": "2026-11-25",
-          "url": "https://www.hoyolab.com/article/47558594"
-        },
-        {
-          "title": "《絕區零》挽晝角色展示｜日隕之前",
-          "summary": "活動開始:0 結束:0 就好像那如此沉重的太陽，替她宣判了命運。 ▼YouTube https://youtu.be/fHMp66kAE-M ▼預約3.4版本領菲林和紀念名片！ https://hoyo.link/5yqHKFHnS",
-          "confidence": "高",
-          "date": "2026-11-25",
-          "url": "https://www.hoyolab.com/article/47558480"
         }
       ]
     },
@@ -246,11 +246,11 @@
       ],
       "leaks": [
         {
-          "title": "討論牆 | 《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - LINE TODAY",
-          "summary": "討論牆 | 《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 LINE TODAY",
+          "title": "琳奈、千咲、鎖暝與心化身披薩推薦官！《鳴潮》日本必勝客聯名登場 - SouNova 少女星",
+          "summary": "琳奈、千咲、鎖暝與心化身披薩推薦官！《鳴潮》日本必勝客聯名登場 SouNova 少女星",
           "confidence": "中",
-          "date": "2026-11-22",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04U1l4cm1uMFNMNG9WZks0SHg2ZVppOENLakJLeGlWX0Yzd21DTmhWeGNtRGF6TXphVm4tdE4tbzUwWWR1VXlCaVpRMkZTbkViLUFVVy12Mmg3U0c4OGxrVGNfWXk?oc=5"
+          "date": "2026-11-27",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTkhSMnRqWjc5QTNCbldRWU9PTENCYWVXTW42aThVOHdCdXNfanhmYVg4NDZOQXZTSjFHUUtFNzdHZmxTYjJxU19sWWFNUXFEa1Q4ZEtCNzUzS05PSUtaTkpadzFTbXlvQmVJV2VJbzlIeHBnbzhZN0p0N0lpdWdrTw?oc=5"
         },
         {
           "title": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲《Wuthering Waves》 - GNN 新聞網",
@@ -260,13 +260,6 @@
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HeGZaT1lzellYRDVJYnFQSFV5MjNrbWd2UjRfWmhWc3J5UVowTEYzZjVGNF8yMm5ISGRfYlRxNGdZZGU1OXVXWlgyQVpHaVpGcnVqd0M4Slo?oc=5"
         },
         {
-          "title": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - 上報Up Media",
-          "summary": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 上報Up Media",
-          "confidence": "中",
-          "date": "2026-11-21",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9UZ21QMU5mYkliMkpMNkRrWEpoRS1MTWpsRTkzZnkwaVE1QTNoa3U4d2FTRTA2Vy1ibGUtcmdxejFHYVVWX3ZDeHVPYThSOGZ5bFVDYm1lZUlrRDBDeGc?oc=5"
-        },
-        {
           "title": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 - Ludens Media",
           "summary": "《鳴潮》與日本必勝客 12 月 1 日起跨界合作 先公開歲主「心」聯名視覺 Ludens Media",
           "confidence": "中",
@@ -274,18 +267,25 @@
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50SGx0TlR1QTU5TC1IV3BlTEVpMC1WbXk5c3RzQ3B0TzFEQ2toUWNDbS1FN1hZUWFMVWlBaDhBd2lPNE5HZElpSUQxQS1vM3Q1amR0YjdUdkEycWJoS1lOTmJWbHRMay1RSEE?oc=5"
         },
         {
-          "title": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 - 蕃新聞",
-          "summary": "《鳴潮》4.0 版本全新實機影片公開！新角色「安娜」、「露希爾」設定同步曝光 蕃新聞",
+          "title": "Wuthering Waves Version 4.0 Gets Official Gameplay Reveal - Simulation Daily",
+          "summary": "Wuthering Waves Version 4.0 Gets Official Gameplay Reveal Simulation Daily",
           "confidence": "中",
           "date": "2026-11-21",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qblMyNW5PeHhJM1p0U25ZUVB0T3J3R3RFeEJWNWJHeVpLVTVyV2hxMmlBY1NPU01vRVJZc0VPN3g5NW5nRnluR3o5aEtFcU15aWc?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5YckU2bjQxcE93YmhWcEpEVnItYXJXWmdiNHFadEVfMnFVdUVBZFBKX0JuZWt4NW5zNmpBVjVkZWpJdTI0Sy1aVkltTmtRZmJzV1o2d2xGaFpZejdHeG1hYjVZMTY4NVBTZTdUQTJvMVBxTjJVWUdFNFhn?oc=5"
         },
         {
-          "title": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 遊戲新聞 - PChome Online 新聞",
-          "summary": "《鳴潮》公開 4.0 版本全新實機展示影片帶來新角色「安娜」、「露希爾」及全新機甲- 遊戲新聞 PChome Online 新聞",
+          "title": "《鳴潮》公開一系列4.0 版本影片及全新角色立繪預告12 月 22 日開啟年度篇章《Wuthering Waves》 - GNN 新聞網",
+          "summary": "《鳴潮》公開一系列4.0 版本影片及全新角色立繪預告12 月 22 日開啟年度篇章《Wuthering Waves》 GNN 新聞網",
           "confidence": "中",
-          "date": "2026-11-21",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVzh4R0xuRGhzOTl0OWw5em15Qi1TQXFRa2JxNGd2UUtyZE5jdUNJWVY1NlpRc2pxM0hORjlvaTdNY2xjaDFMSW8ydEJSbFZuWHY3clIyeUY0emJmc25zWDROc1lWd2t5d3RucEJnamFEOFlVZE42UElRc0NKUklQSWpVd1I?oc=5"
+          "date": "2026-11-18",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Ea1NNbGZUekY0T2RpdF9pN2oxOWN3ZlpvbjRrSW5kZk51ZlZ5RUFXaFFsdDM5dlhieEFuZGlYeE9rVl9FejM2Y1dnd09zRHpPQVpGak9RcUw?oc=5"
+        },
+        {
+          "title": "Wuthering Waves changes its Steam launcher, and Kuro recommends a reinstall - MIXED News",
+          "summary": "Wuthering Waves changes its Steam launcher, and Kuro recommends a reinstall MIXED News",
+          "confidence": "中",
+          "date": "2026-11-12",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONmY2alF5ZllmQ0JmTXBNQXFrRHRMbTRLYXRpQTFWUUlkQWZIeHRraWU5QUFJdHJsZkRrOXlxalhDZDBVWExRemJRa2hRMGhtVHd3NnZzQVo3eHQ5eHNpcU41VFExVE9McjFlaGswMG9nVnd6Tmd5eVdINVVqSnBaeHB2ckI?oc=5"
         }
       ]
     },
@@ -318,18 +318,18 @@
       ],
       "leaks": [
         {
+          "title": "Arknights: Endfield's Latest Banner is Full of Honey - GameGrin",
+          "summary": "Arknights: Endfield's Latest Banner is Full of Honey GameGrin",
+          "confidence": "中",
+          "date": "2026-11-27",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYjdITk9jNjRUQWJvZk52UC1RU21jVDk5bnUzUTlPakQ3SUhIdmNDdlNLVWYtcmxQYkh3c0M4Ni1DVm15UWFTZXZuNHpNOFBYOWRiZDVHUXVYMlN5WEtBOVBTbUVoRkdHWGF1RWZGcm1sVGdXb0ZnTE95NXE3RWRuazFyQmxYNHJy?oc=5"
+        },
+        {
           "title": "Arknights: Endfield update mandates reinstall, adds Kay and new area - A 90s Kid",
           "summary": "Arknights: Endfield update mandates reinstall, adds Kay and new area A 90s Kid",
           "confidence": "中",
           "date": "2026-11-25",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaFl4cWFrdUV6V3FDRExHZVJMV241cmlBOUFvYjFYMldHOHI2TXYwWDk1Vlc3eUxkZkRKYk1tZUp5VEdldjBZTWl6Z0xqWFdVRUxXUTZjcUpTeUNueFp6ZlRlR0QxbFJ5T2ZITWhSUUJiWVdIam8tQ2czaU5ydzFiRFA2dEZfLTlNcFJsREptN28zX2htTEE?oc=5"
-        },
-        {
-          "title": "Arknights: Endfield maintenance on November 24: downtime and download sizes - jeu.video",
-          "summary": "Arknights: Endfield maintenance on November 24: downtime and download sizes jeu.video",
-          "confidence": "中",
-          "date": "2026-11-24",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORmN4THlJdVN0Sy1zUG41LUN2TGtzMjd4TC1mamxlRkFHOHg4YTNpeVVvTDdrT3c2akNHQ19uOFFsWU9ZUFNyd0pCdU1FNERsVU5DWVR0a1dHUjJNTzFJWGZMR1VpMmpfdW1qeG1yUDNEZWJ5aUVsUkhmTjNTbUxoeE5R?oc=5"
         },
         {
           "title": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線公開2.0 版本前瞻內容《Arknights: Endfield》 - GNN 新聞網",
@@ -346,18 +346,18 @@
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQXzdVenRuMjl3RW1QSmdWMjVKdFJGRlhXTDRXTWx2WXFPd29RbGFqUl82cDVCaGNMSkVHTzVUQW42VzhpWG1HQ1BhNkU2c1pYYWZ5YkpiMkZqLTJieDk2UG1rZWhzS0J3ODZGM2F0aklLTkNtbDhZYUhvaUh6LTM1SmhfM3E?oc=5"
         },
         {
-          "title": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線 公開 2.0 版本前瞻內容 - CMoney",
-          "summary": "《明日方舟：終末地》全新版本「穿越甚大蘑境與你相逢」11/25 上線 公開 2.0 版本前瞻內容 CMoney",
+          "title": "Arknights: Endfield sets free ‘Meeting You in the World o’Shrooms’ update for November 25th - Inven Global",
+          "summary": "Arknights: Endfield sets free ‘Meeting You in the World o’Shrooms’ update for November 25th Inven Global",
           "confidence": "中",
           "date": "2026-11-23",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYUGZ3Ql9CWE9sRnUzdFRPX3NuNTVRd25DNGY5dUhqTzh6VWVhakk5YjgzUzM2Tldvd1R4azJ6MUZyOHF2TEluRjhpZlZXTEhBQm1HYjFFOWw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSVZUdXJWeUladXU1QUkyY1RpN1RTN0sya0R2NXFtdGF1QTNudGxpb3dOQm9rLVplX05FWE5XUjQ2ek9GMnBoMGhReVZkM2lkZXJVMElROV9XUXZiZ185TW9pQlZkX1doUE9kX1ZCZDZfMjNQNFNFamhZRzZZdEJ0R0ZsbFJIdTk5ajNWc21fb1Yzdng0M3Y5QUVoMlVKdTY0TXRjQ0s2LUVWUlpnVWFZZmJ4VkRSZG9lcmlNSHpBU3cya3YwQ2QzSUNn?oc=5"
         },
         {
-          "title": "《明日方舟：終末地》11月25日推全新版本！6星幹員「小刻」登場 2.0將開放羅德島探索 - 上報Up Media",
-          "summary": "《明日方舟：終末地》11月25日推全新版本！6星幹員「小刻」登場 2.0將開放羅德島探索 上報Up Media",
+          "title": "Arknights: Endfield’s November 25 update adds roster-based team suggestions - jeu.video",
+          "summary": "Arknights: Endfield’s November 25 update adds roster-based team suggestions jeu.video",
           "confidence": "中",
           "date": "2026-11-23",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LT2lnc3BmTkUwRUJiNDVxVk5HeUtQNWxMU1lSQktmT2J0S19qVzZqYThIZjhyMmVpMjloVUVkTUpGUV9Pa0pTaEN3dXlaY3l3NmdWd1duOEY?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAyUTdXeGYwdjJ3clczeUw1T2JIM05CY3hoREhnUUZLbEdVREdGMG8yWTlUb3FjaHR5ZC1BMDF0OFVvU0VjSW9UWnlGT3BGWWFSTTd1WTlOQ2hhSkNRYTZYOXFaNk94VVllQWowVXdhT2s2U1RP?oc=5"
         }
       ]
     },
@@ -390,11 +390,18 @@
       ],
       "leaks": [
         {
-          "title": "Nte 1.5 Release Time & Countdown (Neverness to Everness) - IMDb",
-          "summary": "Nte 1.5 Release Time & Countdown (Neverness to Everness) IMDb",
+          "title": "NTE codes November 2026 - Eurogamer.net",
+          "summary": "NTE codes November 2026 Eurogamer.net",
           "confidence": "中",
-          "date": "2026-11-13",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85Ym03U3o3QVdYVUdSZW8zZWhNRnp2U2xaY2VhcW80MjE0ZTZYeHFoRkhId1ZhMmZVZlNNRXhQRG4xc0Izc19FQzRJbm16NldrLUE1TTRvVDA4cUpwN2RaNA?oc=5"
+          "date": "2026-11-14",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEWDVJUEVNUV9IN1pDbnhvek1wd0NSalZIaUpsa05rcGZYendsRFJ1dEhJQndhXzJTTFJvQzIzVF84QXQtRllPb0IyeWVZZllDQS05cjZ2N053NDl3OWtHS0dTWnlvbXh2?oc=5"
+        },
+        {
+          "title": "All active Neverness to Everness codes list - Polygon.com",
+          "summary": "All active Neverness to Everness codes list Polygon.com",
+          "confidence": "中",
+          "date": "2026-11-12",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9qdjk2RFhWMVBHdXdib2tmWFV4M2lGcWZxbXFSYnZILU0tdnlUekNyeXNmY0xCbE43LUZDeTBWclVfdjN1V2JQSmd3TURZUTNIdjdFRDM2ZWNfNkhOMHVzc3dYZEtPYXg1akVqRjhTWnFpTmVtckpkSzVCcw?oc=5"
         },
         {
           "title": "《異環》1.5 版本「致電，空想迷數」開啟全新S 級角色「曳爾沐」登場《NTE: Neverness to Everness》 - GNN 新聞網",
@@ -409,13 +416,6 @@
           "confidence": "中",
           "date": "2026-11-09",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1heVhmWHNCYU5UTUNpY25fQktHMFgzQkREVTF3aUdFUlcyRDhYQ1otRXdKYVQzbXFCTkNsN0F1emUyd1hRaEJwT19GNk1mOUlGQTdvYVlfaW5LUHY2TWFBQXc3cy1SeS1wcTBkdG05Vi1GOTRZZU9XekdPb0hsMUE?oc=5"
-        },
-        {
-          "title": "Everything revealed for Neverness to Everness Version 1.5–Exe, Elyms, vehicles, events - GosuGamers",
-          "summary": "Everything revealed for Neverness to Everness Version 1.5–Exe, Elyms, vehicles, events GosuGamers",
-          "confidence": "中",
-          "date": "2026-10-28",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOTBhUWNkOEtnYjBzdnRfa2xlLXRYVkN6Z3o3UThCNUsxVmtiX2ZzXzh6Q3VTb2NUY2U1dTN1LUxpSjY3OGQ4eWlCMFdrSUZBY0YzNjBYNTdWM1VnT2N6TU1uaERLNHlXQjBod1BwZFFWa0RsZk9ZRHN3TlAxVlpKbGFNNEZkYkdOcmxFNmp0ZkJCMGI4NWFkRzNpeE0zVlhES1Fob1RCYUMyd0w4Wmk4MEZ6QkVVVGNvMnBUMVpuMzhWRnY4QzVSMDk3ZEFQbGxn?oc=5"
         },
         {
           "title": "【異環】公測前瞻懶人包💥▸開服版本超過470抽！S級角色免費送滿6+5？限定卡池「絕對不歪」！自選S別選錯！卡池抽取建議？三測玩家帶你快速吸收！ ▹璐洛洛 - 電腦王阿達",
